@@ -6,4 +6,6 @@ version: 0.1.0
 authors:
   - family-names: Gallien
     given-names: Yves
+    orcid: "https://orcid.org/0000-0002-1245-9260"
     affiliation: "CHU de Rennes, Université de Rennes"
+license: MIT

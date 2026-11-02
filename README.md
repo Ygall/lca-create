@@ -39,4 +39,4 @@ Yves Gallien, CHU de Rennes et Université de Rennes. Voir `CITATION.cff`.
 
 ## Licence
 
-À définir avant la publication publique.
+MIT, voir `LICENSE`. Elle couvre le code, les documents et le référentiel de notions.
