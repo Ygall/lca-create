@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/sujet-lca.json",
+  "title": "Sujet d'entraînement de lecture critique d'article",
+  "type": "object",
+  "required": ["sujet", "questions", "controle_qualite"],
+  "additionalProperties": false,
+  "$defs": {
+    "reference_notion": {
+      "type": "object",
+      "description": "Renvoi à une notion du référentiel figé assets/boussole_lca_notions.json. `id` est stable d'une version à l'autre ; `numero` correspond à la version du référentiel déclarée dans sujet.referentiel_notions.",
+      "required": ["id", "numero"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "numero": { "type": "string", "pattern": "^[0-9]{3}$" }
+      }
+    }
+  },
+  "properties": {
+    "fiche_article": {
+      "type": "object",
+      "description": "Fiche de caractérisation de l'article (étape 1), restituée en préambule pour audit. Clés libres.",
+      "additionalProperties": true
+    },
+    "sujet": {
+      "type": "object",
+      "required": ["source", "type_etude", "parametres", "referentiel_notions"],
+      "additionalProperties": false,
+      "properties": {
+        "referentiel_notions": {
+          "type": "object",
+          "description": "Version du référentiel de notions utilisé, reprise telle quelle du fichier assets/boussole_lca_notions.json.",
+          "required": ["version", "commit"],
+          "additionalProperties": false,
+          "properties": {
+            "projet": { "type": "string" },
+            "version": { "type": "string" },
+            "commit": { "type": "string" },
+            "date_version": { "type": "string" }
+          }
+        },
+        "identifiant": {
+          "type": "string",
+          "description": "Identifiant du sujet, slug construit sur la source."
+        },
+        "date_generation": {
+          "type": "string",
+          "format": "date"
+        },
+        "source": {
+          "type": "object",
+          "required": ["titre", "annee"],
+          "additionalProperties": false,
+          "properties": {
+            "titre": { "type": "string" },
+            "premier_auteur": { "type": "string" },
+            "revue": { "type": "string" },
+            "annee": { "type": "integer" },
+            "pmid": { "type": "string" },
+            "doi": { "type": "string" },
+            "langue": { "type": "string", "enum": ["fr", "en", "autre"] },
+            "acces_texte_integral": { "type": "boolean" }
+          }
+        },
+        "type_etude": {
+          "type": "string",
+          "enum": [
+            "essai_controle_randomise",
+            "cohorte",
+            "cas_temoins",
+            "transversale",
+            "diagnostique",
+            "revue_systematique_meta_analyse",
+            "medico_economique",
+            "qualitative",
+            "autre"
+          ]
+        },
+        "parametres": {
+          "type": "object",
+          "required": ["difficulte_cible", "nombre_questions"],
+          "additionalProperties": false,
+          "properties": {
+            "difficulte_cible": { "type": "integer", "minimum": 1, "maximum": 10 },
+            "nombre_questions": { "type": "integer", "minimum": 13, "maximum": 15 },
+            "objectifs_pedagogiques": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "notions_ciblees": {
+              "type": "array",
+              "description": "Notions du référentiel demandées par l'utilisateur (par numéro, id, libellé ou terme anglais), résolues vers leur entrée.",
+              "items": { "$ref": "#/$defs/reference_notion" }
+            }
+          }
+        }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 13,
+      "maxItems": 15,
+      "items": {
+        "type": "object",
+        "required": [
+          "numero",
+          "type",
+          "enonce",
+          "propositions",
+          "nb_propositions_correctes",
+          "notion",
+          "difficulte",
+          "section_article"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "numero": { "type": "integer", "minimum": 1 },
+          "type": { "type": "string", "enum": ["QRU", "QRM"] },
+          "enonce": { "type": "string" },
+          "notion": {
+            "type": "string",
+            "description": "Notion méthodologique évaluée, formulation courte en texte libre. Décision délibérée : pas de nomenclature fermée (enum) sur ce champ."
+          },
+          "objectif_pedagogique": {
+            "type": "string",
+            "description": "Objectif fourni par l'utilisateur auquel la question se rattache, le cas échéant, en texte libre. Décision délibérée : pas de nomenclature fermée (enum) sur ce champ."
+          },
+          "difficulte": { "type": "integer", "minimum": 1, "maximum": 10 },
+          "section_article": {
+            "type": "string",
+            "enum": [
+              "titre_resume",
+              "introduction",
+              "methodes",
+              "resultats",
+              "discussion",
+              "declarations",
+              "transversal"
+            ]
+          },
+          "propositions": {
+            "type": "array",
+            "minItems": 5,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "required": ["lettre", "texte", "correcte", "justification"],
+              "additionalProperties": false,
+              "properties": {
+                "lettre": { "type": "string", "enum": ["A", "B", "C", "D", "E"] },
+                "texte": { "type": "string" },
+                "correcte": { "type": "boolean" },
+                "justification": {
+                  "type": "string",
+                  "pattern": "^(« |Absence de mention|Sans objet)",
+                  "description": "Format : « citation littérale » (localisation), puis explication ; lorsqu'une notion théorique est mobilisée, son numéro est placé entre parenthèses dans l'explication, juste après la notion nommée : (036) ou (036, 037). Absence d'information : commencer par « Absence de mention ». Notion théorique indépendante du texte : commencer par « Sans objet »."
+                },
+                "notions": {
+                  "type": "array",
+                  "description": "Notions du référentiel mobilisées par la proposition. Obligatoire si une notion théorique est mobilisée ; vide pour une proposition de pur repérage dans le texte. Plusieurs notions admises, notamment une notion et son prérequis lorsque la proposition les associe. Les numéros doivent être identiques à ceux cités entre parenthèses dans la justification.",
+                  "items": {
+                    "type": "object",
+                    "required": ["id", "numero", "role"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": { "type": "string" },
+                      "numero": { "type": "string", "pattern": "^[0-9]{3}$" },
+                      "role": {
+                        "type": "string",
+                        "enum": ["evaluee", "associee"],
+                        "description": "evaluee : notion principalement testée ; associee : prérequis ou notion dépendante convoquée par la proposition."
+                      }
+                    }
+                  }
+                },
+                "erreur_visee": {
+                  "type": "string",
+                  "description": "Erreur de raisonnement ciblée, renseignée pour les propositions fausses."
+                }
+              }
+            }
+          },
+          "nb_propositions_correctes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "commentaire_pedagogique": { "type": "string" }
+        }
+      }
+    },
+    "controle_qualite": {
+      "type": "object",
+      "required": [
+        "distribution_propositions_correctes",
+        "difficulte_moyenne",
+        "objectifs_couverts",
+        "source_partielle"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "distribution_propositions_correctes": {
+          "type": "object",
+          "description": "Effectif de questions par nombre de propositions vraies.",
+          "additionalProperties": false,
+          "properties": {
+            "1": { "type": "integer" },
+            "2": { "type": "integer" },
+            "3": { "type": "integer" },
+            "4": { "type": "integer" },
+            "5": { "type": "integer" }
+          }
+        },
+        "difficulte_moyenne": { "type": "number" },
+        "objectifs_couverts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "source_partielle": {
+          "type": "boolean",
+          "description": "Vrai si le sujet a été construit sur le seul résumé."
+        },
+        "reserves": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Limites signalées à l'enseignant."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4225 @@
+{
+  "format": "boussole-lca/mapping-notions",
+  "version_format": 1,
+  "projet": "Boussole LCA",
+  "version": "2026.0",
+  "date_version": "19 octobre 2026",
+  "genere_le": "2026-11-02T14:38:34+0100",
+  "commit": "10a1b22",
+  "auteur": "Dr. Yves Gallien, Université de Rennes",
+  "avertissement": "Ce document est une proposition pédagogique de structuration de l’apprentissage de la lecture critique d’article. Il ne constitue pas un programme officiel de LCA : le programme de référence est celui fixé par les textes réglementaires du deuxième cycle des études médicales.",
+  "consignes": ["Référencer une notion par son `id`, qui est stable d'une version à l'autre ; le `numero` est recalculé à chaque version selon l'ordre du parcours.", "`niveau` vaut `base` (repérer une information et lire un résultat) ou `avance` (juger un choix méthodologique, repérer une limite non déclarée).", "`prerequis` liste les notions à maîtriser avant ; `ouvre_vers` les notions qui s'appuient sur celle-ci.", "`termes_en` donne des formulations anglaises fréquentes pour repérer la notion dans un article ; la liste n'est pas exhaustive.", "Signaler la version du mapping (`version`, `commit`) dans tout document produit à partir de ce fichier."],
+  "effectifs": {
+    "notions": 143,
+    "base": 81,
+    "avance": 62,
+    "fiches": 4
+  },
+  "categories": [
+    {
+      "code": "A",
+      "libelle": "Conception de l'étude",
+      "domaines": [1, 2, 3, 4, 5]
+    },
+    {
+      "code": "B",
+      "libelle": "Analyse et résultats",
+      "domaines": [6, 7, 8]
+    },
+    {
+      "code": "C",
+      "libelle": "Validité et interprétation",
+      "domaines": [9, 10]
+    },
+    {
+      "code": "D",
+      "libelle": "Schémas spécifiques",
+      "domaines": [11, 12, 13, 14, 15]
+    }
+  ],
+  "domaines": [
+    {
+      "numero": 1,
+      "code": "A1",
+      "libelle": "Démarche scientifique et EBM",
+      "categorie": "A"
+    },
+    {
+      "numero": 2,
+      "code": "A2",
+      "libelle": "Schémas d'étude",
+      "categorie": "A"
+    },
+    {
+      "numero": 3,
+      "code": "A3",
+      "libelle": "Population et échantillon",
+      "categorie": "A"
+    },
+    {
+      "numero": 4,
+      "code": "A4",
+      "libelle": "Critères de jugement",
+      "categorie": "A"
+    },
+    {
+      "numero": 5,
+      "code": "A5",
+      "libelle": "Nombre de sujets nécessaires",
+      "categorie": "A"
+    },
+    {
+      "numero": 6,
+      "code": "B6",
+      "libelle": "Statistiques descriptives",
+      "categorie": "B"
+    },
+    {
+      "numero": 7,
+      "code": "B7",
+      "libelle": "Mesures de fréquence et d'association",
+      "categorie": "B"
+    },
+    {
+      "numero": 8,
+      "code": "B8",
+      "libelle": "Inférence statistique",
+      "categorie": "B"
+    },
+    {
+      "numero": 9,
+      "code": "C9",
+      "libelle": "Biais et validité",
+      "categorie": "C"
+    },
+    {
+      "numero": 10,
+      "code": "C10",
+      "libelle": "Discussion, intégrité, reporting",
+      "categorie": "C"
+    },
+    {
+      "numero": 11,
+      "code": "D11",
+      "libelle": "Essai randomisé",
+      "categorie": "D"
+    },
+    {
+      "numero": 12,
+      "code": "D12",
+      "libelle": "Étude de cohorte",
+      "categorie": "D"
+    },
+    {
+      "numero": 13,
+      "code": "D13",
+      "libelle": "Étude cas-témoins",
+      "categorie": "D"
+    },
+    {
+      "numero": 14,
+      "code": "D14",
+      "libelle": "Tests diagnostiques",
+      "categorie": "D"
+    },
+    {
+      "numero": 15,
+      "code": "D15",
+      "libelle": "Revues et méta-analyses",
+      "categorie": "D"
+    }
+  ],
+  "phases": [
+    {
+      "numero": 1,
+      "titre": "Lire un article et poser la question",
+      "niveau": "base",
+      "notions": ["structure-imrad", "vocabulaire-methodologique-anglais", "rationnel-et-etat-des-connaissances", "question-de-recherche-pico", "objectif-principal-et-secondaires", "hypothese-testee"]
+    },
+    {
+      "numero": 2,
+      "titre": "Identifier le schéma d'étude",
+      "niveau": "base",
+      "notions": ["observationnel-vs-experimental", "descriptif-vs-analytique", "etude-transversale", "cohorte-prospective-ou-retrospective", "etude-cas-temoins", "essai-controle-randomise", "etude-d-evaluation-diagnostique", "revue-systematique-vs-narrative", "niveaux-de-preuve-has"]
+    },
+    {
+      "numero": 3,
+      "titre": "Population et critères de jugement",
+      "niveau": "base",
+      "notions": ["population-source-cible-etudiee", "criteres-d-inclusion-et-de-non-inclusion", "recrutement-periode-centres", "types-de-variables-qualitative-quantitative", "critere-principal-unique-et-prespecifie", "criteres-secondaires", "nature-binaire-ou-quantitative", "mesure-en-aveugle"]
+    },
+    {
+      "numero": 4,
+      "titre": "Décrire les données",
+      "niveau": "base",
+      "notions": ["effectifs-et-pourcentages", "moyenne-et-ecart-type", "mediane-et-intervalle-interquartile", "diagramme-de-flux", "perdus-de-vue", "lecture-du-tableau-1"]
+    },
+    {
+      "numero": 5,
+      "titre": "Mesurer fréquence et association",
+      "niveau": "base",
+      "notions": ["prevalence", "incidence-cumulee-taux-d-incidence", "risque-relatif", "difference-de-risque", "reduction-relative-du-risque", "nnt-et-nnh", "rapport-de-cotes"]
+    },
+    {
+      "numero": 6,
+      "titre": "Inférence et nombre de sujets",
+      "niveau": "base",
+      "notions": ["hypotheses-h0-et-h1-valeur-de-p", "ecart-type-vs-erreur-standard", "intervalle-de-confiance-a-95", "tests-usuels-chi2-student-wilcoxon", "taille-de-l-effet", "significativite-vs-pertinence-clinique", "risques-alpha-et-beta-puissance", "effet-attendu", "hypotheses-du-calcul"]
+    },
+    {
+      "numero": 7,
+      "titre": "Biais et validité",
+      "niveau": "base",
+      "notions": ["biais-de-selection", "biais-d-attrition", "biais-de-classement-differentiel-ou-non", "facteur-de-confusion", "validite-interne-et-externe"]
+    },
+    {
+      "numero": 8,
+      "titre": "Essai randomisé",
+      "niveau": "base",
+      "notions": ["equipoise", "ethique-et-consentement", "randomisation", "assignation-secrete", "comparabilite-initiale-tableau-1", "placebo-vs-traitement-de-reference", "insu-patient-soignant-evaluateur", "intention-de-traiter-vs-per-protocole"]
+    },
+    {
+      "numero": 9,
+      "titre": "Cohorte et cas-témoins",
+      "niveau": "base",
+      "notions": ["definition-des-groupes-et-de-l-exposition", "absence-de-l-evenement-a-l-inclusion", "anteriorite-de-l-exposition-sur-l-evenement", "duree-et-completude-du-suivi-perdus-de-vue-differentiels", "incidence-et-personnes-temps", "risque-relatif-cohorte", "definition-et-source-des-cas", "choix-et-source-des-temoins", "appariement-principe-et-facteurs", "recueil-retrospectif-de-l-exposition", "biais-de-memorisation", "impossibilite-d-estimer-incidence-et-prevalence", "rapport-de-cotes-seule-mesure-estimable"]
+    },
+    {
+      "numero": 10,
+      "titre": "Test diagnostique et synthèse",
+      "niveau": "base",
+      "notions": ["test-de-reference", "sensibilite-specificite", "vpp-vpn-et-prevalence", "lecture-d-un-forest-plot", "estimation-groupee"]
+    },
+    {
+      "numero": 11,
+      "titre": "Interpréter et conclure",
+      "niveau": "base",
+      "notions": ["analyse-de-sensibilite-sous-groupes-interaction", "limites-declarees", "applicabilite-a-la-pratique", "financement-et-liens-d-interets", "conclusion-coherente-avec-les-resultats"]
+    },
+    {
+      "numero": 12,
+      "titre": "Données de survie",
+      "niveau": "avance",
+      "notions": ["critere-de-type-delai-censure", "kaplan-meier-et-censure", "sujets-a-risque-mediane-de-survie", "test-du-log-rank", "lecture-d-un-hazard-ratio", "hypothese-des-risques-proportionnels", "censure-informative", "risques-concurrents", "biais-du-temps-immortel"]
+    },
+    {
+      "numero": 13,
+      "titre": "Confusion, modélisation et causalité",
+      "niveau": "avance",
+      "notions": ["fraction-attribuable", "regressions-lineaire-logistique-cox", "ajustement", "biais-d-indication", "score-de-propension", "difference-standardisee-entre-groupes", "analyse-appariee-regression-logistique-conditionnelle", "biais-de-collision", "causalite-inverse", "effet-travailleur-sain", "biais-de-selection-des-temoins-berkson", "cas-temoins-nichee", "bases-medico-administratives-registres", "emulation-d-essai-cible", "criteres-de-bradford-hill"]
+    },
+    {
+      "numero": 14,
+      "titre": "Critères de jugement et mesure",
+      "niveau": "avance",
+      "notions": ["critere-composite", "critere-intermediaire-de-substitution", "proms-et-echelles-validees", "comite-d-adjudication", "regression-vers-la-moyenne", "protocole-publie-et-enregistrement", "changement-de-critere-a-posteriori"]
+    },
+    {
+      "numero": 15,
+      "titre": "Plans d'essai et analyses avancées",
+      "niveau": "avance",
+      "notions": ["stratification-blocs-minimisation", "methodes-d-echantillonnage", "essai-en-grappes", "effet-de-grappe-et-icc", "plan-croise-plan-factoriel", "contamination-cross-over", "itt-modifiee", "gestion-des-donnees-manquantes", "superiorite-non-inferiorite-equivalence", "marge-de-non-inferiorite", "nsn-en-non-inferiorite", "inflation-pour-attrition", "multiplicite-des-tests", "analyses-intermediaires-depense-d-alpha", "arret-premature", "sous-groupes-et-test-d-interaction"]
+    },
+    {
+      "numero": 16,
+      "titre": "Diagnostic avancé et méta-analyse",
+      "niveau": "avance",
+      "notions": ["rapports-de-vraisemblance", "courbe-roc-auc-choix-du-seuil", "biais-de-spectre-de-verification-d-incorporation", "reproductibilite-kappa-icc", "difference-de-moyennes-standardisee", "heterogeneite-q-i2", "effets-fixes-vs-aleatoires", "funnel-plot-biais-de-publication"]
+    },
+    {
+      "numero": 17,
+      "titre": "Jugement critique et niveau de preuve",
+      "niveau": "avance",
+      "notions": ["coherence-externe", "absence-de-preuve-et-preuve-d-absence", "limites-non-declarees", "spin-et-sur-interpretation", "grilles-equator-consort-strobe-stard-prisma", "science-ouverte-partage-des-donnees", "grade-certitude-et-force"]
+    }
+  ],
+  "notions": [
+    {
+      "id": "structure-imrad",
+      "numero": "001",
+      "libelle": "Structure IMRaD",
+      "description": "Organisation d'un article original en Introduction, Méthodes, Résultats et Discussion, qui permet de savoir où chercher chaque information (objectif, schéma, critère principal, résultat, limites).",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 1,
+      "code": "A1",
+      "phase": 1,
+      "prerequis": [],
+      "ouvre_vers": [
+        {
+          "id": "vocabulaire-methodologique-anglais",
+          "numero": "002"
+        },
+        {
+          "id": "rationnel-et-etat-des-connaissances",
+          "numero": "003"
+        },
+        {
+          "id": "grilles-equator-consort-strobe-stard-prisma",
+          "numero": "141"
+        }
+      ],
+      "termes_en": ["Introduction", "Methods", "Results", "Discussion", "abstract"],
+      "fiche": false
+    },
+    {
+      "id": "vocabulaire-methodologique-anglais",
+      "numero": "002",
+      "libelle": "Vocabulaire méthodologique anglais",
+      "description": "Termes méthodologiques anglais courants à reconnaître et traduire, l'article étant en anglais et les questions en français.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 1,
+      "code": "A1",
+      "phase": 1,
+      "prerequis": [
+        {
+          "id": "structure-imrad",
+          "numero": "001"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["randomized", "blinded", "endpoint", "outcome", "follow-up", "hazard", "odds", "confidence interval"],
+      "fiche": false
+    },
+    {
+      "id": "rationnel-et-etat-des-connaissances",
+      "numero": "003",
+      "libelle": "Rationnel et état des connaissances",
+      "description": "Justification de l'étude dans l'introduction : ce qui est connu, ce qui manque et pourquoi la question posée est utile.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 1,
+      "code": "A1",
+      "phase": 1,
+      "prerequis": [
+        {
+          "id": "structure-imrad",
+          "numero": "001"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "question-de-recherche-pico",
+          "numero": "004"
+        }
+      ],
+      "termes_en": ["background", "rationale", "knowledge gap"],
+      "fiche": false
+    },
+    {
+      "id": "question-de-recherche-pico",
+      "numero": "004",
+      "libelle": "Question de recherche (PICO)",
+      "description": "Formulation de la question selon la Population, l'Intervention ou l'exposition, le Comparateur et le critère de jugement (Outcome), à reconstituer à partir de l'article.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 1,
+      "code": "A1",
+      "phase": 1,
+      "prerequis": [
+        {
+          "id": "rationnel-et-etat-des-connaissances",
+          "numero": "003"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "objectif-principal-et-secondaires",
+          "numero": "005"
+        },
+        {
+          "id": "observationnel-vs-experimental",
+          "numero": "007"
+        },
+        {
+          "id": "revue-systematique-vs-narrative",
+          "numero": "014"
+        },
+        {
+          "id": "population-source-cible-etudiee",
+          "numero": "016"
+        }
+      ],
+      "termes_en": ["research question", "PICO", "population", "intervention", "comparator", "outcome"],
+      "fiche": false
+    },
+    {
+      "id": "objectif-principal-et-secondaires",
+      "numero": "005",
+      "libelle": "Objectif principal et secondaires",
+      "description": "Objectif unique qui fonde le schéma et le calcul du nombre de sujets, distingué des objectifs secondaires qui sont exploratoires.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 1,
+      "code": "A1",
+      "phase": 1,
+      "prerequis": [
+        {
+          "id": "question-de-recherche-pico",
+          "numero": "004"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "hypothese-testee",
+          "numero": "006"
+        },
+        {
+          "id": "critere-principal-unique-et-prespecifie",
+          "numero": "020"
+        },
+        {
+          "id": "protocole-publie-et-enregistrement",
+          "numero": "111"
+        }
+      ],
+      "termes_en": ["primary objective", "secondary objectives", "aim"],
+      "fiche": false
+    },
+    {
+      "id": "hypothese-testee",
+      "numero": "006",
+      "libelle": "Hypothèse testée",
+      "description": "Hypothèse que l'étude cherche à confirmer (supériorité, non-infériorité, association), à distinguer d'une étude purement descriptive ou génératrice d'hypothèses.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 1,
+      "code": "A1",
+      "phase": 1,
+      "prerequis": [
+        {
+          "id": "objectif-principal-et-secondaires",
+          "numero": "005"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "hypotheses-h0-et-h1-valeur-de-p",
+          "numero": "037"
+        }
+      ],
+      "termes_en": ["hypothesis", "we hypothesized", "hypothesis-generating"],
+      "fiche": false
+    },
+    {
+      "id": "observationnel-vs-experimental",
+      "numero": "007",
+      "libelle": "Observationnel vs expérimental",
+      "description": "Distinction selon que l'investigateur attribue l'intervention (étude expérimentale) ou se contente d'observer l'exposition (étude observationnelle).",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 2,
+      "prerequis": [
+        {
+          "id": "question-de-recherche-pico",
+          "numero": "004"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "descriptif-vs-analytique",
+          "numero": "008"
+        },
+        {
+          "id": "essai-controle-randomise",
+          "numero": "012"
+        }
+      ],
+      "termes_en": ["observational study", "interventional study", "experimental study"],
+      "fiche": false
+    },
+    {
+      "id": "descriptif-vs-analytique",
+      "numero": "008",
+      "libelle": "Descriptif vs analytique",
+      "description": "Distinction entre une étude qui décrit une fréquence ou une distribution et une étude qui compare des groupes pour rechercher une association.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 2,
+      "prerequis": [
+        {
+          "id": "observationnel-vs-experimental",
+          "numero": "007"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "etude-transversale",
+          "numero": "009"
+        },
+        {
+          "id": "cohorte-prospective-ou-retrospective",
+          "numero": "010"
+        },
+        {
+          "id": "etude-cas-temoins",
+          "numero": "011"
+        },
+        {
+          "id": "etude-d-evaluation-diagnostique",
+          "numero": "013"
+        }
+      ],
+      "termes_en": ["descriptive study", "analytical study"],
+      "fiche": false
+    },
+    {
+      "id": "etude-transversale",
+      "numero": "009",
+      "libelle": "Étude transversale",
+      "description": "Étude observationnelle où exposition et maladie sont mesurées au même moment, qui estime une prévalence mais ne permet pas d'établir l'antériorité de l'exposition.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 2,
+      "prerequis": [
+        {
+          "id": "descriptif-vs-analytique",
+          "numero": "008"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "prevalence",
+          "numero": "030"
+        }
+      ],
+      "termes_en": ["cross-sectional study", "survey", "prevalence study"],
+      "fiche": false
+    },
+    {
+      "id": "cohorte-prospective-ou-retrospective",
+      "numero": "010",
+      "libelle": "Cohorte prospective ou rétrospective",
+      "description": "Étude qui suit des sujets classés selon leur exposition jusqu'à la survenue de l'événement, le recueil pouvant être prospectif ou reconstitué à partir de données existantes (rétrospectif).",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 2,
+      "prerequis": [
+        {
+          "id": "descriptif-vs-analytique",
+          "numero": "008"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "incidence-cumulee-taux-d-incidence",
+          "numero": "031"
+        },
+        {
+          "id": "definition-des-groupes-et-de-l-exposition",
+          "numero": "059"
+        },
+        {
+          "id": "cas-temoins-nichee",
+          "numero": "102"
+        },
+        {
+          "id": "bases-medico-administratives-registres",
+          "numero": "103"
+        }
+      ],
+      "termes_en": ["cohort study", "prospective cohort", "retrospective cohort", "follow-up"],
+      "fiche": false
+    },
+    {
+      "id": "etude-cas-temoins",
+      "numero": "011",
+      "libelle": "Étude cas-témoins",
+      "description": "Étude qui compare l'exposition passée de sujets malades (cas) et de sujets non malades (témoins), adaptée aux maladies rares.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 2,
+      "prerequis": [
+        {
+          "id": "descriptif-vs-analytique",
+          "numero": "008"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "definition-et-source-des-cas",
+          "numero": "065"
+        }
+      ],
+      "termes_en": ["case-control study", "cases", "controls"],
+      "fiche": false
+    },
+    {
+      "id": "essai-controle-randomise",
+      "numero": "012",
+      "libelle": "Essai contrôlé randomisé",
+      "description": "Étude expérimentale où l'intervention est attribuée par tirage au sort et comparée à un groupe contrôle, schéma de référence pour démontrer un effet causal.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 2,
+      "prerequis": [
+        {
+          "id": "observationnel-vs-experimental",
+          "numero": "007"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "niveaux-de-preuve-has",
+          "numero": "015"
+        },
+        {
+          "id": "equipoise",
+          "numero": "051"
+        },
+        {
+          "id": "randomisation",
+          "numero": "053"
+        },
+        {
+          "id": "placebo-vs-traitement-de-reference",
+          "numero": "056"
+        },
+        {
+          "id": "emulation-d-essai-cible",
+          "numero": "104"
+        },
+        {
+          "id": "plan-croise-plan-factoriel",
+          "numero": "117"
+        }
+      ],
+      "termes_en": ["randomized controlled trial", "RCT", "randomised trial", "controlled trial"],
+      "fiche": false
+    },
+    {
+      "id": "etude-d-evaluation-diagnostique",
+      "numero": "013",
+      "libelle": "Étude d'évaluation diagnostique",
+      "description": "Étude qui compare les résultats d'un test à ceux d'un test de référence chez les mêmes sujets pour en estimer les performances.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 2,
+      "prerequis": [
+        {
+          "id": "descriptif-vs-analytique",
+          "numero": "008"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "test-de-reference",
+          "numero": "072"
+        }
+      ],
+      "termes_en": ["diagnostic accuracy study", "index test", "reference standard"],
+      "fiche": false
+    },
+    {
+      "id": "revue-systematique-vs-narrative",
+      "numero": "014",
+      "libelle": "Revue systématique vs narrative",
+      "description": "Revue systématique fondée sur une question précise, une recherche exhaustive et une sélection reproductible des études, par opposition à la revue narrative non reproductible.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 15,
+      "code": "D15",
+      "phase": 2,
+      "prerequis": [
+        {
+          "id": "question-de-recherche-pico",
+          "numero": "004"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "niveaux-de-preuve-has",
+          "numero": "015"
+        },
+        {
+          "id": "lecture-d-un-forest-plot",
+          "numero": "075"
+        },
+        {
+          "id": "coherence-externe",
+          "numero": "137"
+        }
+      ],
+      "termes_en": ["systematic review", "narrative review", "literature search", "PRISMA"],
+      "fiche": false
+    },
+    {
+      "id": "niveaux-de-preuve-has",
+      "numero": "015",
+      "libelle": "Niveaux de preuve HAS",
+      "description": "Gradation du niveau de preuve scientifique selon le schéma d'étude (de l'essai randomisé et la méta-analyse aux séries de cas), utilisée pour qualifier la force d'une conclusion.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 1,
+      "code": "A1",
+      "phase": 2,
+      "prerequis": [
+        {
+          "id": "essai-controle-randomise",
+          "numero": "012"
+        },
+        {
+          "id": "revue-systematique-vs-narrative",
+          "numero": "014"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "grade-certitude-et-force",
+          "numero": "143"
+        }
+      ],
+      "termes_en": ["level of evidence", "evidence hierarchy"],
+      "fiche": false
+    },
+    {
+      "id": "population-source-cible-etudiee",
+      "numero": "016",
+      "libelle": "Population source, cible, étudiée",
+      "description": "Distinction entre la population à laquelle on veut appliquer les résultats (cible), celle dans laquelle on recrute (source) et l'échantillon effectivement analysé (étudiée).",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 3,
+      "code": "A3",
+      "phase": 3,
+      "prerequis": [
+        {
+          "id": "question-de-recherche-pico",
+          "numero": "004"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "criteres-d-inclusion-et-de-non-inclusion",
+          "numero": "017"
+        },
+        {
+          "id": "recrutement-periode-centres",
+          "numero": "018"
+        },
+        {
+          "id": "applicabilite-a-la-pratique",
+          "numero": "079"
+        },
+        {
+          "id": "methodes-d-echantillonnage",
+          "numero": "114"
+        }
+      ],
+      "termes_en": ["target population", "source population", "study population", "study sample"],
+      "fiche": false
+    },
+    {
+      "id": "criteres-d-inclusion-et-de-non-inclusion",
+      "numero": "017",
+      "libelle": "Critères d'inclusion et de non-inclusion",
+      "description": "Critères qui définissent les sujets éligibles et conditionnent la population étudiée, donc l'extrapolation des résultats.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 3,
+      "code": "A3",
+      "phase": 3,
+      "prerequis": [
+        {
+          "id": "population-source-cible-etudiee",
+          "numero": "016"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "diagramme-de-flux",
+          "numero": "027"
+        },
+        {
+          "id": "biais-de-selection",
+          "numero": "046"
+        },
+        {
+          "id": "regression-vers-la-moyenne",
+          "numero": "110"
+        }
+      ],
+      "termes_en": ["inclusion criteria", "exclusion criteria", "eligibility criteria"],
+      "fiche": false
+    },
+    {
+      "id": "recrutement-periode-centres",
+      "numero": "018",
+      "libelle": "Recrutement, période, centres",
+      "description": "Conditions de recrutement (lieux, nombre de centres, période, mode de sélection) qui renseignent sur la représentativité de l'échantillon.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 3,
+      "code": "A3",
+      "phase": 3,
+      "prerequis": [
+        {
+          "id": "population-source-cible-etudiee",
+          "numero": "016"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["recruitment", "enrolled", "multicenter", "single-center", "study period", "setting"],
+      "fiche": false
+    },
+    {
+      "id": "types-de-variables-qualitative-quantitative",
+      "numero": "019",
+      "libelle": "Types de variables : qualitative, quantitative",
+      "description": "Distinction entre variables qualitatives (binaires, nominales, ordinales) et quantitatives (discrètes, continues), qui oriente la description et les tests.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 6,
+      "code": "B6",
+      "phase": 3,
+      "prerequis": [],
+      "ouvre_vers": [
+        {
+          "id": "nature-binaire-ou-quantitative",
+          "numero": "022"
+        },
+        {
+          "id": "effectifs-et-pourcentages",
+          "numero": "024"
+        },
+        {
+          "id": "moyenne-et-ecart-type",
+          "numero": "025"
+        }
+      ],
+      "termes_en": ["categorical variable", "continuous variable", "ordinal", "nominal"],
+      "fiche": false
+    },
+    {
+      "id": "critere-principal-unique-et-prespecifie",
+      "numero": "020",
+      "libelle": "Critère principal unique et préspécifié",
+      "description": "Critère de jugement unique, défini avant l'étude, sur lequel portent le calcul du nombre de sujets et la conclusion principale.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 3,
+      "prerequis": [
+        {
+          "id": "objectif-principal-et-secondaires",
+          "numero": "005"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "criteres-secondaires",
+          "numero": "021"
+        },
+        {
+          "id": "nature-binaire-ou-quantitative",
+          "numero": "022"
+        },
+        {
+          "id": "mesure-en-aveugle",
+          "numero": "023"
+        },
+        {
+          "id": "critere-composite",
+          "numero": "106"
+        },
+        {
+          "id": "critere-intermediaire-de-substitution",
+          "numero": "107"
+        },
+        {
+          "id": "changement-de-critere-a-posteriori",
+          "numero": "112"
+        }
+      ],
+      "termes_en": ["primary endpoint", "primary outcome", "prespecified"],
+      "fiche": false
+    },
+    {
+      "id": "criteres-secondaires",
+      "numero": "021",
+      "libelle": "Critères secondaires",
+      "description": "Critères complémentaires dont les résultats sont exploratoires et ne permettent pas de conclure lorsque le critère principal n'est pas significatif.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 3,
+      "prerequis": [
+        {
+          "id": "critere-principal-unique-et-prespecifie",
+          "numero": "020"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["secondary endpoints", "secondary outcomes", "exploratory outcomes"],
+      "fiche": false
+    },
+    {
+      "id": "nature-binaire-ou-quantitative",
+      "numero": "022",
+      "libelle": "Nature binaire ou quantitative",
+      "description": "Type du critère de jugement (binaire, quantitatif, délai de survenue), qui détermine la mesure d'effet et le test statistique utilisés.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 3,
+      "prerequis": [
+        {
+          "id": "types-de-variables-qualitative-quantitative",
+          "numero": "019"
+        },
+        {
+          "id": "critere-principal-unique-et-prespecifie",
+          "numero": "020"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "tests-usuels-chi2-student-wilcoxon",
+          "numero": "040"
+        },
+        {
+          "id": "critere-de-type-delai-censure",
+          "numero": "082"
+        },
+        {
+          "id": "proms-et-echelles-validees",
+          "numero": "108"
+        }
+      ],
+      "termes_en": ["binary outcome", "continuous outcome", "dichotomous", "time-to-event"],
+      "fiche": false
+    },
+    {
+      "id": "mesure-en-aveugle",
+      "numero": "023",
+      "libelle": "Mesure en aveugle",
+      "description": "Évaluation du critère de jugement par une personne qui ignore le groupe ou l'exposition du sujet, pour éviter un biais de mesure.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 3,
+      "prerequis": [
+        {
+          "id": "critere-principal-unique-et-prespecifie",
+          "numero": "020"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "biais-de-classement-differentiel-ou-non",
+          "numero": "048"
+        },
+        {
+          "id": "insu-patient-soignant-evaluateur",
+          "numero": "057"
+        },
+        {
+          "id": "comite-d-adjudication",
+          "numero": "109"
+        },
+        {
+          "id": "reproductibilite-kappa-icc",
+          "numero": "132"
+        }
+      ],
+      "termes_en": ["blinded outcome assessment", "outcome assessor blinded", "masked assessment"],
+      "fiche": false
+    },
+    {
+      "id": "effectifs-et-pourcentages",
+      "numero": "024",
+      "libelle": "Effectifs et pourcentages",
+      "description": "Description d'une variable qualitative par son effectif et son pourcentage, en vérifiant le dénominateur utilisé.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 6,
+      "code": "B6",
+      "phase": 4,
+      "prerequis": [
+        {
+          "id": "types-de-variables-qualitative-quantitative",
+          "numero": "019"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "lecture-du-tableau-1",
+          "numero": "029"
+        },
+        {
+          "id": "prevalence",
+          "numero": "030"
+        },
+        {
+          "id": "sensibilite-specificite",
+          "numero": "073"
+        }
+      ],
+      "termes_en": ["n (%)", "number", "proportion", "percentage"],
+      "fiche": false
+    },
+    {
+      "id": "moyenne-et-ecart-type",
+      "numero": "025",
+      "libelle": "Moyenne et écart-type",
+      "description": "Paramètres de position et de dispersion d'une variable quantitative de distribution symétrique ; l'écart-type décrit la variabilité entre individus.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 6,
+      "code": "B6",
+      "phase": 4,
+      "prerequis": [
+        {
+          "id": "types-de-variables-qualitative-quantitative",
+          "numero": "019"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "mediane-et-intervalle-interquartile",
+          "numero": "026"
+        },
+        {
+          "id": "ecart-type-vs-erreur-standard",
+          "numero": "038"
+        },
+        {
+          "id": "regression-vers-la-moyenne",
+          "numero": "110"
+        }
+      ],
+      "termes_en": ["mean", "standard deviation", "SD", "mean ± SD"],
+      "fiche": true
+    },
+    {
+      "id": "mediane-et-intervalle-interquartile",
+      "numero": "026",
+      "libelle": "Médiane et intervalle interquartile",
+      "description": "Paramètres de position et de dispersion d'une variable quantitative asymétrique, insensibles aux valeurs extrêmes.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 6,
+      "code": "B6",
+      "phase": 4,
+      "prerequis": [
+        {
+          "id": "moyenne-et-ecart-type",
+          "numero": "025"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "lecture-du-tableau-1",
+          "numero": "029"
+        }
+      ],
+      "termes_en": ["median", "interquartile range", "IQR", "range"],
+      "fiche": false
+    },
+    {
+      "id": "diagramme-de-flux",
+      "numero": "027",
+      "libelle": "Diagramme de flux",
+      "description": "Figure qui retrace le nombre de sujets à chaque étape (éligibles, inclus, randomisés, suivis, analysés) et permet de repérer exclusions et perdus de vue.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 3,
+      "code": "A3",
+      "phase": 4,
+      "prerequis": [
+        {
+          "id": "criteres-d-inclusion-et-de-non-inclusion",
+          "numero": "017"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "perdus-de-vue",
+          "numero": "028"
+        }
+      ],
+      "termes_en": ["flow chart", "flow diagram", "CONSORT diagram", "screened", "excluded"],
+      "fiche": false
+    },
+    {
+      "id": "perdus-de-vue",
+      "numero": "028",
+      "libelle": "Perdus de vue",
+      "description": "Sujets dont le suivi s'interrompt avant la fin de l'étude, dont le nombre et la répartition entre groupes menacent la validité des résultats.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 3,
+      "code": "A3",
+      "phase": 4,
+      "prerequis": [
+        {
+          "id": "diagramme-de-flux",
+          "numero": "027"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "biais-d-attrition",
+          "numero": "047"
+        },
+        {
+          "id": "intention-de-traiter-vs-per-protocole",
+          "numero": "058"
+        },
+        {
+          "id": "gestion-des-donnees-manquantes",
+          "numero": "120"
+        },
+        {
+          "id": "inflation-pour-attrition",
+          "numero": "124"
+        }
+      ],
+      "termes_en": ["lost to follow-up", "withdrawal", "dropout", "discontinued"],
+      "fiche": false
+    },
+    {
+      "id": "lecture-du-tableau-1",
+      "numero": "029",
+      "libelle": "Lecture du tableau 1",
+      "description": "Lecture du tableau des caractéristiques initiales pour décrire la population étudiée et apprécier l'extrapolation des résultats.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 6,
+      "code": "B6",
+      "phase": 4,
+      "prerequis": [
+        {
+          "id": "effectifs-et-pourcentages",
+          "numero": "024"
+        },
+        {
+          "id": "mediane-et-intervalle-interquartile",
+          "numero": "026"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "comparabilite-initiale-tableau-1",
+          "numero": "055"
+        }
+      ],
+      "termes_en": ["Table 1", "baseline characteristics", "demographic characteristics"],
+      "fiche": false
+    },
+    {
+      "id": "prevalence",
+      "numero": "030",
+      "libelle": "Prévalence",
+      "description": "Proportion de sujets présentant la maladie à un moment donné dans une population, estimée par une étude transversale.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 5,
+      "prerequis": [
+        {
+          "id": "etude-transversale",
+          "numero": "009"
+        },
+        {
+          "id": "effectifs-et-pourcentages",
+          "numero": "024"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "incidence-cumulee-taux-d-incidence",
+          "numero": "031"
+        },
+        {
+          "id": "vpp-vpn-et-prevalence",
+          "numero": "074"
+        },
+        {
+          "id": "fraction-attribuable",
+          "numero": "091"
+        }
+      ],
+      "termes_en": ["prevalence", "point prevalence"],
+      "fiche": false
+    },
+    {
+      "id": "incidence-cumulee-taux-d-incidence",
+      "numero": "031",
+      "libelle": "Incidence cumulée, taux d'incidence",
+      "description": "Mesures de survenue de nouveaux cas : proportion de sujets malades sur une période (incidence cumulée, ou risque) ou nombre de cas rapporté aux personnes-temps (taux d'incidence).",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 5,
+      "prerequis": [
+        {
+          "id": "prevalence",
+          "numero": "030"
+        },
+        {
+          "id": "cohorte-prospective-ou-retrospective",
+          "numero": "010"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "risque-relatif",
+          "numero": "032"
+        },
+        {
+          "id": "difference-de-risque",
+          "numero": "033"
+        },
+        {
+          "id": "incidence-et-personnes-temps",
+          "numero": "063"
+        },
+        {
+          "id": "impossibilite-d-estimer-incidence-et-prevalence",
+          "numero": "070"
+        }
+      ],
+      "termes_en": ["cumulative incidence", "incidence rate", "risk", "new cases"],
+      "fiche": false
+    },
+    {
+      "id": "risque-relatif",
+      "numero": "032",
+      "libelle": "Risque relatif",
+      "description": "Rapport des risques de l'événement entre exposés et non exposés (ou entre groupes d'un essai), interprété par rapport à 1.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 5,
+      "prerequis": [
+        {
+          "id": "incidence-cumulee-taux-d-incidence",
+          "numero": "031"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "reduction-relative-du-risque",
+          "numero": "034"
+        },
+        {
+          "id": "rapport-de-cotes",
+          "numero": "036"
+        },
+        {
+          "id": "taille-de-l-effet",
+          "numero": "041"
+        },
+        {
+          "id": "facteur-de-confusion",
+          "numero": "049"
+        },
+        {
+          "id": "risque-relatif-cohorte",
+          "numero": "064"
+        },
+        {
+          "id": "analyse-de-sensibilite-sous-groupes-interaction",
+          "numero": "077"
+        },
+        {
+          "id": "lecture-d-un-hazard-ratio",
+          "numero": "086"
+        },
+        {
+          "id": "fraction-attribuable",
+          "numero": "091"
+        }
+      ],
+      "termes_en": ["relative risk", "risk ratio", "RR"],
+      "fiche": false
+    },
+    {
+      "id": "difference-de-risque",
+      "numero": "033",
+      "libelle": "Différence de risque",
+      "description": "Différence absolue des risques entre deux groupes, qui exprime l'effet en nombre d'événements évités ou provoqués et dépend du risque de base.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 5,
+      "prerequis": [
+        {
+          "id": "incidence-cumulee-taux-d-incidence",
+          "numero": "031"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "nnt-et-nnh",
+          "numero": "035"
+        }
+      ],
+      "termes_en": ["risk difference", "absolute risk reduction", "ARR", "absolute difference"],
+      "fiche": false
+    },
+    {
+      "id": "reduction-relative-du-risque",
+      "numero": "034",
+      "libelle": "Réduction relative du risque",
+      "description": "Diminution du risque exprimée en proportion du risque du groupe contrôle (1 - RR), qui paraît toujours plus impressionnante que la réduction absolue.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 5,
+      "prerequis": [
+        {
+          "id": "risque-relatif",
+          "numero": "032"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["relative risk reduction", "RRR"],
+      "fiche": false
+    },
+    {
+      "id": "nnt-et-nnh",
+      "numero": "035",
+      "libelle": "NNT et NNH",
+      "description": "Nombre de sujets à traiter pour éviter un événement (NNT) ou en provoquer un (NNH), égal à l'inverse de la différence de risque sur une durée donnée.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 5,
+      "prerequis": [
+        {
+          "id": "difference-de-risque",
+          "numero": "033"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["number needed to treat", "NNT", "number needed to harm", "NNH"],
+      "fiche": false
+    },
+    {
+      "id": "rapport-de-cotes",
+      "numero": "036",
+      "libelle": "Rapport de cotes",
+      "description": "Rapport des cotes de l'événement entre deux groupes, proche du risque relatif seulement si l'événement est rare, seule mesure estimable en cas-témoins et produite par la régression logistique.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 5,
+      "prerequis": [
+        {
+          "id": "risque-relatif",
+          "numero": "032"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "rapport-de-cotes-seule-mesure-estimable",
+          "numero": "071"
+        },
+        {
+          "id": "regressions-lineaire-logistique-cox",
+          "numero": "092"
+        }
+      ],
+      "termes_en": ["odds ratio", "OR", "adjusted odds ratio", "aOR"],
+      "fiche": true
+    },
+    {
+      "id": "hypotheses-h0-et-h1-valeur-de-p",
+      "numero": "037",
+      "libelle": "Hypothèses H0 et H1, valeur de p",
+      "description": "Logique du test statistique : probabilité d'observer un résultat au moins aussi extrême si l'hypothèse nulle est vraie, qui n'est ni la probabilité que H0 soit vraie ni une mesure de l'importance de l'effet.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 6,
+      "prerequis": [
+        {
+          "id": "hypothese-testee",
+          "numero": "006"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "intervalle-de-confiance-a-95",
+          "numero": "039"
+        },
+        {
+          "id": "tests-usuels-chi2-student-wilcoxon",
+          "numero": "040"
+        },
+        {
+          "id": "risques-alpha-et-beta-puissance",
+          "numero": "043"
+        },
+        {
+          "id": "superiorite-non-inferiorite-equivalence",
+          "numero": "121"
+        }
+      ],
+      "termes_en": ["null hypothesis", "alternative hypothesis", "p value", "statistically significant"],
+      "fiche": true
+    },
+    {
+      "id": "ecart-type-vs-erreur-standard",
+      "numero": "038",
+      "libelle": "Écart-type vs erreur standard",
+      "description": "Distinction entre l'écart-type, qui mesure la dispersion des individus, et l'erreur standard, qui mesure la précision de l'estimation d'une moyenne et diminue quand l'effectif augmente.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 6,
+      "code": "B6",
+      "phase": 6,
+      "prerequis": [
+        {
+          "id": "moyenne-et-ecart-type",
+          "numero": "025"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "intervalle-de-confiance-a-95",
+          "numero": "039"
+        }
+      ],
+      "termes_en": ["standard deviation", "standard error", "SE", "SEM"],
+      "fiche": false
+    },
+    {
+      "id": "intervalle-de-confiance-a-95",
+      "numero": "039",
+      "libelle": "Intervalle de confiance à 95 %",
+      "description": "Fourchette de valeurs plausibles de l'effet réel, qui renseigne sur la précision de l'estimation et sur la significativité selon qu'elle contient ou non la valeur d'absence d'effet.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 6,
+      "prerequis": [
+        {
+          "id": "ecart-type-vs-erreur-standard",
+          "numero": "038"
+        },
+        {
+          "id": "hypotheses-h0-et-h1-valeur-de-p",
+          "numero": "037"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "taille-de-l-effet",
+          "numero": "041"
+        },
+        {
+          "id": "significativite-vs-pertinence-clinique",
+          "numero": "042"
+        },
+        {
+          "id": "lecture-d-un-forest-plot",
+          "numero": "075"
+        },
+        {
+          "id": "superiorite-non-inferiorite-equivalence",
+          "numero": "121"
+        }
+      ],
+      "termes_en": ["95% confidence interval", "95% CI", "confidence limits"],
+      "fiche": false
+    },
+    {
+      "id": "tests-usuels-chi2-student-wilcoxon",
+      "numero": "040",
+      "libelle": "Tests usuels : chi2, Student, Wilcoxon",
+      "description": "Choix du test selon le type de variable et les conditions d'application : chi2 ou Fisher pour les proportions, Student pour les moyennes, Wilcoxon ou Mann-Whitney en non paramétrique.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 6,
+      "prerequis": [
+        {
+          "id": "hypotheses-h0-et-h1-valeur-de-p",
+          "numero": "037"
+        },
+        {
+          "id": "nature-binaire-ou-quantitative",
+          "numero": "022"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "test-du-log-rank",
+          "numero": "085"
+        },
+        {
+          "id": "regressions-lineaire-logistique-cox",
+          "numero": "092"
+        }
+      ],
+      "termes_en": ["chi-square test", "Fisher's exact test", "t test", "Wilcoxon", "Mann-Whitney", "nonparametric"],
+      "fiche": false
+    },
+    {
+      "id": "taille-de-l-effet",
+      "numero": "041",
+      "libelle": "Taille de l'effet",
+      "description": "Ampleur de la différence ou de l'association observée, exprimée par une mesure d'effet avec son intervalle de confiance, indépendamment de la valeur de p.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 6,
+      "prerequis": [
+        {
+          "id": "risque-relatif",
+          "numero": "032"
+        },
+        {
+          "id": "intervalle-de-confiance-a-95",
+          "numero": "039"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "significativite-vs-pertinence-clinique",
+          "numero": "042"
+        },
+        {
+          "id": "effet-attendu",
+          "numero": "044"
+        },
+        {
+          "id": "difference-de-moyennes-standardisee",
+          "numero": "133"
+        }
+      ],
+      "termes_en": ["effect size", "magnitude of effect", "treatment effect", "point estimate"],
+      "fiche": false
+    },
+    {
+      "id": "significativite-vs-pertinence-clinique",
+      "numero": "042",
+      "libelle": "Significativité vs pertinence clinique",
+      "description": "Distinction entre un résultat statistiquement significatif et un effet assez grand pour importer au patient, jugée sur l'ampleur de l'effet et les bornes de l'intervalle de confiance.",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 6,
+      "prerequis": [
+        {
+          "id": "intervalle-de-confiance-a-95",
+          "numero": "039"
+        },
+        {
+          "id": "taille-de-l-effet",
+          "numero": "041"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "conclusion-coherente-avec-les-resultats",
+          "numero": "081"
+        },
+        {
+          "id": "marge-de-non-inferiorite",
+          "numero": "122"
+        },
+        {
+          "id": "absence-de-preuve-et-preuve-d-absence",
+          "numero": "138"
+        }
+      ],
+      "termes_en": ["statistical significance", "clinical relevance", "clinically meaningful", "minimal clinically important difference"],
+      "fiche": false
+    },
+    {
+      "id": "risques-alpha-et-beta-puissance",
+      "numero": "043",
+      "libelle": "Risques alpha et bêta, puissance",
+      "description": "Risque alpha de conclure à tort à une différence, risque bêta de méconnaître une différence réelle, et puissance (1 - bêta) de mettre en évidence l'effet attendu.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 5,
+      "code": "A5",
+      "phase": 6,
+      "prerequis": [
+        {
+          "id": "hypotheses-h0-et-h1-valeur-de-p",
+          "numero": "037"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "effet-attendu",
+          "numero": "044"
+        },
+        {
+          "id": "multiplicite-des-tests",
+          "numero": "125"
+        },
+        {
+          "id": "absence-de-preuve-et-preuve-d-absence",
+          "numero": "138"
+        }
+      ],
+      "termes_en": ["type I error", "type II error", "alpha", "power", "statistical power"],
+      "fiche": false
+    },
+    {
+      "id": "effet-attendu",
+      "numero": "044",
+      "libelle": "Effet attendu",
+      "description": "Différence minimale que l'étude veut pouvoir mettre en évidence, fixée a priori pour le calcul du nombre de sujets et qui doit être cliniquement pertinente.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 5,
+      "code": "A5",
+      "phase": 6,
+      "prerequis": [
+        {
+          "id": "taille-de-l-effet",
+          "numero": "041"
+        },
+        {
+          "id": "risques-alpha-et-beta-puissance",
+          "numero": "043"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "hypotheses-du-calcul",
+          "numero": "045"
+        }
+      ],
+      "termes_en": ["expected effect", "minimal clinically important difference", "assumed difference", "effect size"],
+      "fiche": false
+    },
+    {
+      "id": "hypotheses-du-calcul",
+      "numero": "045",
+      "libelle": "Hypothèses du calcul",
+      "description": "Paramètres du calcul du nombre de sujets (alpha, puissance, fréquence dans le groupe contrôle, effet attendu, test uni- ou bilatéral), à confronter aux résultats observés.",
+      "niveau": "base",
+      "categorie": "A",
+      "domaine": 5,
+      "code": "A5",
+      "phase": 6,
+      "prerequis": [
+        {
+          "id": "effet-attendu",
+          "numero": "044"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "nsn-en-non-inferiorite",
+          "numero": "123"
+        },
+        {
+          "id": "inflation-pour-attrition",
+          "numero": "124"
+        }
+      ],
+      "termes_en": ["sample size calculation", "power calculation", "sample size was calculated"],
+      "fiche": false
+    },
+    {
+      "id": "biais-de-selection",
+      "numero": "046",
+      "libelle": "Biais de sélection",
+      "description": "Erreur systématique liée à la façon dont les sujets sont inclus ou retenus dans l'analyse, qui rend les groupes non comparables ou l'échantillon non représentatif.",
+      "niveau": "base",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 7,
+      "prerequis": [
+        {
+          "id": "criteres-d-inclusion-et-de-non-inclusion",
+          "numero": "017"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "biais-d-attrition",
+          "numero": "047"
+        },
+        {
+          "id": "validite-interne-et-externe",
+          "numero": "050"
+        },
+        {
+          "id": "choix-et-source-des-temoins",
+          "numero": "066"
+        },
+        {
+          "id": "effet-travailleur-sain",
+          "numero": "100"
+        },
+        {
+          "id": "biais-de-selection-des-temoins-berkson",
+          "numero": "101"
+        },
+        {
+          "id": "biais-de-spectre-de-verification-d-incorporation",
+          "numero": "131"
+        }
+      ],
+      "termes_en": ["selection bias"],
+      "fiche": false
+    },
+    {
+      "id": "biais-d-attrition",
+      "numero": "047",
+      "libelle": "Biais d'attrition",
+      "description": "Biais lié aux sorties d'étude et aux perdus de vue lorsqu'ils diffèrent entre groupes ou sont liés à l'événement.",
+      "niveau": "base",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 7,
+      "prerequis": [
+        {
+          "id": "perdus-de-vue",
+          "numero": "028"
+        },
+        {
+          "id": "biais-de-selection",
+          "numero": "046"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "duree-et-completude-du-suivi-perdus-de-vue-differentiels",
+          "numero": "062"
+        },
+        {
+          "id": "censure-informative",
+          "numero": "088"
+        }
+      ],
+      "termes_en": ["attrition bias", "differential loss to follow-up", "dropout"],
+      "fiche": false
+    },
+    {
+      "id": "biais-de-classement-differentiel-ou-non",
+      "numero": "048",
+      "libelle": "Biais de classement, différentiel ou non",
+      "description": "Erreur de mesure de l'exposition ou de l'événement ; non différentielle, elle tend à rapprocher l'estimation de 1, différentielle (selon le groupe), elle peut la biaiser dans les deux sens.",
+      "niveau": "base",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 7,
+      "prerequis": [
+        {
+          "id": "mesure-en-aveugle",
+          "numero": "023"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "validite-interne-et-externe",
+          "numero": "050"
+        },
+        {
+          "id": "biais-de-memorisation",
+          "numero": "069"
+        },
+        {
+          "id": "bases-medico-administratives-registres",
+          "numero": "103"
+        }
+      ],
+      "termes_en": ["misclassification", "information bias", "measurement bias", "differential misclassification"],
+      "fiche": false
+    },
+    {
+      "id": "facteur-de-confusion",
+      "numero": "049",
+      "libelle": "Facteur de confusion",
+      "description": "Facteur lié à la fois à l'exposition et à l'événement sans être sur le chemin causal, qui crée ou masque une association.",
+      "niveau": "base",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 7,
+      "prerequis": [
+        {
+          "id": "risque-relatif",
+          "numero": "032"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "validite-interne-et-externe",
+          "numero": "050"
+        },
+        {
+          "id": "randomisation",
+          "numero": "053"
+        },
+        {
+          "id": "appariement-principe-et-facteurs",
+          "numero": "067"
+        },
+        {
+          "id": "analyse-de-sensibilite-sous-groupes-interaction",
+          "numero": "077"
+        },
+        {
+          "id": "ajustement",
+          "numero": "093"
+        },
+        {
+          "id": "biais-d-indication",
+          "numero": "094"
+        }
+      ],
+      "termes_en": ["confounding", "confounder", "confounding factor"],
+      "fiche": false
+    },
+    {
+      "id": "validite-interne-et-externe",
+      "numero": "050",
+      "libelle": "Validité interne et externe",
+      "description": "Validité interne : absence de biais dans l'estimation de l'effet chez les sujets étudiés ; validité externe : possibilité d'extrapoler le résultat à d'autres populations.",
+      "niveau": "base",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 7,
+      "prerequis": [
+        {
+          "id": "biais-de-selection",
+          "numero": "046"
+        },
+        {
+          "id": "biais-de-classement-differentiel-ou-non",
+          "numero": "048"
+        },
+        {
+          "id": "facteur-de-confusion",
+          "numero": "049"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "limites-declarees",
+          "numero": "078"
+        },
+        {
+          "id": "applicabilite-a-la-pratique",
+          "numero": "079"
+        },
+        {
+          "id": "conclusion-coherente-avec-les-resultats",
+          "numero": "081"
+        },
+        {
+          "id": "criteres-de-bradford-hill",
+          "numero": "105"
+        },
+        {
+          "id": "coherence-externe",
+          "numero": "137"
+        }
+      ],
+      "termes_en": ["internal validity", "external validity", "generalizability"],
+      "fiche": false
+    },
+    {
+      "id": "equipoise",
+      "numero": "051",
+      "libelle": "Équipoise",
+      "description": "Incertitude réelle de la communauté médicale sur le traitement le plus efficace, condition éthique de la réalisation d'un essai randomisé.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 8,
+      "prerequis": [
+        {
+          "id": "essai-controle-randomise",
+          "numero": "012"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "ethique-et-consentement",
+          "numero": "052"
+        }
+      ],
+      "termes_en": ["equipoise", "clinical equipoise"],
+      "fiche": false
+    },
+    {
+      "id": "ethique-et-consentement",
+      "numero": "052",
+      "libelle": "Éthique et consentement",
+      "description": "Conditions éthiques et réglementaires de l'étude : avis d'un comité d'éthique, information et consentement des participants.",
+      "niveau": "base",
+      "categorie": "C",
+      "domaine": 10,
+      "code": "C10",
+      "phase": 8,
+      "prerequis": [
+        {
+          "id": "equipoise",
+          "numero": "051"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["ethics committee", "institutional review board", "IRB", "informed consent", "Declaration of Helsinki"],
+      "fiche": false
+    },
+    {
+      "id": "randomisation",
+      "numero": "053",
+      "libelle": "Randomisation",
+      "description": "Attribution du traitement par tirage au sort, qui répartit de façon équilibrée les facteurs pronostiques, connus ou non, entre les groupes.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 8,
+      "prerequis": [
+        {
+          "id": "essai-controle-randomise",
+          "numero": "012"
+        },
+        {
+          "id": "facteur-de-confusion",
+          "numero": "049"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "assignation-secrete",
+          "numero": "054"
+        },
+        {
+          "id": "comparabilite-initiale-tableau-1",
+          "numero": "055"
+        },
+        {
+          "id": "intention-de-traiter-vs-per-protocole",
+          "numero": "058"
+        },
+        {
+          "id": "stratification-blocs-minimisation",
+          "numero": "113"
+        },
+        {
+          "id": "essai-en-grappes",
+          "numero": "115"
+        }
+      ],
+      "termes_en": ["randomization", "randomly assigned", "random allocation", "computer-generated"],
+      "fiche": false
+    },
+    {
+      "id": "assignation-secrete",
+      "numero": "054",
+      "libelle": "Assignation secrète",
+      "description": "Impossibilité pour l'investigateur de connaître ou prévoir le groupe d'allocation avant l'inclusion du patient (système centralisé, enveloppes scellées), qui protège la randomisation.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 8,
+      "prerequis": [
+        {
+          "id": "randomisation",
+          "numero": "053"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["allocation concealment", "concealed allocation", "centralized randomization", "sealed opaque envelopes"],
+      "fiche": false
+    },
+    {
+      "id": "comparabilite-initiale-tableau-1",
+      "numero": "055",
+      "libelle": "Comparabilité initiale (tableau 1)",
+      "description": "Vérification de l'équilibre des caractéristiques initiales entre groupes, jugée sur l'importance clinique des écarts et non sur des tests statistiques après randomisation.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 8,
+      "prerequis": [
+        {
+          "id": "lecture-du-tableau-1",
+          "numero": "029"
+        },
+        {
+          "id": "randomisation",
+          "numero": "053"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "difference-standardisee-entre-groupes",
+          "numero": "096"
+        }
+      ],
+      "termes_en": ["baseline characteristics", "balanced", "well balanced between groups", "Table 1"],
+      "fiche": false
+    },
+    {
+      "id": "placebo-vs-traitement-de-reference",
+      "numero": "056",
+      "libelle": "Placebo vs traitement de référence",
+      "description": "Choix du comparateur : un placebo, éthique seulement en l'absence de traitement efficace, ou un traitement de référence administré de façon optimale.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 8,
+      "prerequis": [
+        {
+          "id": "essai-controle-randomise",
+          "numero": "012"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "insu-patient-soignant-evaluateur",
+          "numero": "057"
+        }
+      ],
+      "termes_en": ["placebo", "active comparator", "standard of care", "usual care"],
+      "fiche": false
+    },
+    {
+      "id": "insu-patient-soignant-evaluateur",
+      "numero": "057",
+      "libelle": "Insu : patient, soignant, évaluateur",
+      "description": "Méconnaissance du traitement attribué par le patient, le soignant et l'évaluateur, qui limite les biais de performance et de mesure ; on précise qui est en insu plutôt que « simple » ou « double aveugle ».",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 8,
+      "prerequis": [
+        {
+          "id": "mesure-en-aveugle",
+          "numero": "023"
+        },
+        {
+          "id": "placebo-vs-traitement-de-reference",
+          "numero": "056"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["blinding", "double-blind", "single-blind", "open-label", "masked"],
+      "fiche": false
+    },
+    {
+      "id": "intention-de-traiter-vs-per-protocole",
+      "numero": "058",
+      "libelle": "Intention de traiter vs per protocole",
+      "description": "L'analyse en intention de traiter garde chaque patient dans son groupe de randomisation et préserve la comparabilité ; l'analyse per protocole se limite aux patients ayant suivi le protocole.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 8,
+      "prerequis": [
+        {
+          "id": "perdus-de-vue",
+          "numero": "028"
+        },
+        {
+          "id": "randomisation",
+          "numero": "053"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "contamination-cross-over",
+          "numero": "118"
+        },
+        {
+          "id": "itt-modifiee",
+          "numero": "119"
+        }
+      ],
+      "termes_en": ["intention-to-treat", "ITT", "per-protocol", "as-treated"],
+      "fiche": false
+    },
+    {
+      "id": "definition-des-groupes-et-de-l-exposition",
+      "numero": "059",
+      "libelle": "Définition des groupes et de l'exposition",
+      "description": "Définition et mesure de l'exposition en cohorte (nature, dose, durée, source), qui conditionne le classement des sujets et la validité de la comparaison.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 12,
+      "code": "D12",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "cohorte-prospective-ou-retrospective",
+          "numero": "010"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "absence-de-l-evenement-a-l-inclusion",
+          "numero": "060"
+        },
+        {
+          "id": "anteriorite-de-l-exposition-sur-l-evenement",
+          "numero": "061"
+        },
+        {
+          "id": "biais-du-temps-immortel",
+          "numero": "090"
+        }
+      ],
+      "termes_en": ["exposure", "exposed", "unexposed", "exposure assessment"],
+      "fiche": false
+    },
+    {
+      "id": "absence-de-l-evenement-a-l-inclusion",
+      "numero": "060",
+      "libelle": "Absence de l'événement à l'inclusion",
+      "description": "Exigence d'inclure en cohorte des sujets indemnes de l'événement étudié, pour mesurer des cas incidents.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 12,
+      "code": "D12",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "definition-des-groupes-et-de-l-exposition",
+          "numero": "059"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["free of disease at baseline", "incident cases", "excluded prevalent cases"],
+      "fiche": false
+    },
+    {
+      "id": "anteriorite-de-l-exposition-sur-l-evenement",
+      "numero": "061",
+      "libelle": "Antériorité de l'exposition sur l'événement",
+      "description": "Garantie que l'exposition précède l'événement, argument majeur de causalité apporté par la cohorte et absent des études transversales.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 12,
+      "code": "D12",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "definition-des-groupes-et-de-l-exposition",
+          "numero": "059"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "causalite-inverse",
+          "numero": "099"
+        }
+      ],
+      "termes_en": ["temporality", "temporal relationship", "prior exposure"],
+      "fiche": false
+    },
+    {
+      "id": "duree-et-completude-du-suivi-perdus-de-vue-differentiels",
+      "numero": "062",
+      "libelle": "Durée et complétude du suivi, perdus de vue différentiels",
+      "description": "Suivi suffisant pour observer l'événement et aussi complet que possible, les perdus de vue différents entre exposés et non exposés biaisant l'estimation.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 12,
+      "code": "D12",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "biais-d-attrition",
+          "numero": "047"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["follow-up duration", "median follow-up", "completeness of follow-up", "loss to follow-up"],
+      "fiche": false
+    },
+    {
+      "id": "incidence-et-personnes-temps",
+      "numero": "063",
+      "libelle": "Incidence et personnes-temps",
+      "description": "Calcul du taux d'incidence en rapportant le nombre de cas à la somme des durées de suivi individuelles, lorsque les sujets sont suivis sur des durées différentes.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 12,
+      "code": "D12",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "incidence-cumulee-taux-d-incidence",
+          "numero": "031"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "risque-relatif-cohorte",
+          "numero": "064"
+        }
+      ],
+      "termes_en": ["person-years", "incidence rate", "per 1000 person-years"],
+      "fiche": false
+    },
+    {
+      "id": "risque-relatif-cohorte",
+      "numero": "064",
+      "libelle": "Risque relatif",
+      "description": "Mesure d'association propre à la cohorte, rapport d'incidence entre exposés et non exposés, directement estimable car le schéma mesure l'incidence.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 12,
+      "code": "D12",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "risque-relatif",
+          "numero": "032"
+        },
+        {
+          "id": "incidence-et-personnes-temps",
+          "numero": "063"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["relative risk", "incidence rate ratio", "IRR", "rate ratio"],
+      "fiche": false
+    },
+    {
+      "id": "definition-et-source-des-cas",
+      "numero": "065",
+      "libelle": "Définition et source des cas",
+      "description": "Critères diagnostiques et lieu de recrutement des cas (de préférence incidents et diagnostiqués selon des critères explicites) dans une étude cas-témoins.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 13,
+      "code": "D13",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "etude-cas-temoins",
+          "numero": "011"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "choix-et-source-des-temoins",
+          "numero": "066"
+        },
+        {
+          "id": "recueil-retrospectif-de-l-exposition",
+          "numero": "068"
+        }
+      ],
+      "termes_en": ["case definition", "incident cases", "case ascertainment"],
+      "fiche": false
+    },
+    {
+      "id": "choix-et-source-des-temoins",
+      "numero": "066",
+      "libelle": "Choix et source des témoins",
+      "description": "Choix de témoins issus de la même population source que les cas et qui auraient été inclus comme cas s'ils avaient développé la maladie.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 13,
+      "code": "D13",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "definition-et-source-des-cas",
+          "numero": "065"
+        },
+        {
+          "id": "biais-de-selection",
+          "numero": "046"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "appariement-principe-et-facteurs",
+          "numero": "067"
+        },
+        {
+          "id": "impossibilite-d-estimer-incidence-et-prevalence",
+          "numero": "070"
+        },
+        {
+          "id": "biais-de-selection-des-temoins-berkson",
+          "numero": "101"
+        },
+        {
+          "id": "cas-temoins-nichee",
+          "numero": "102"
+        }
+      ],
+      "termes_en": ["control selection", "population-based controls", "hospital controls"],
+      "fiche": false
+    },
+    {
+      "id": "appariement-principe-et-facteurs",
+      "numero": "067",
+      "libelle": "Appariement : principe et facteurs",
+      "description": "Sélection de témoins semblables aux cas sur certains facteurs de confusion (âge, sexe), qui empêche ensuite d'étudier l'effet de ces facteurs et impose une analyse appariée.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 13,
+      "code": "D13",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "choix-et-source-des-temoins",
+          "numero": "066"
+        },
+        {
+          "id": "facteur-de-confusion",
+          "numero": "049"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "analyse-appariee-regression-logistique-conditionnelle",
+          "numero": "097"
+        }
+      ],
+      "termes_en": ["matched", "matching", "matched controls", "1:4 matching"],
+      "fiche": false
+    },
+    {
+      "id": "recueil-retrospectif-de-l-exposition",
+      "numero": "068",
+      "libelle": "Recueil rétrospectif de l'exposition",
+      "description": "Mesure de l'exposition passée après la survenue de la maladie (interrogatoire, dossiers), source de biais de mesure en cas-témoins.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 13,
+      "code": "D13",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "definition-et-source-des-cas",
+          "numero": "065"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "biais-de-memorisation",
+          "numero": "069"
+        }
+      ],
+      "termes_en": ["retrospective assessment", "questionnaire", "recall", "medical records"],
+      "fiche": false
+    },
+    {
+      "id": "biais-de-memorisation",
+      "numero": "069",
+      "libelle": "Biais de mémorisation",
+      "description": "Biais de classement différentiel des cas-témoins : les cas se souviennent mieux ou autrement de leurs expositions que les témoins.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 13,
+      "code": "D13",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "biais-de-classement-differentiel-ou-non",
+          "numero": "048"
+        },
+        {
+          "id": "recueil-retrospectif-de-l-exposition",
+          "numero": "068"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["recall bias"],
+      "fiche": false
+    },
+    {
+      "id": "impossibilite-d-estimer-incidence-et-prevalence",
+      "numero": "070",
+      "libelle": "Impossibilité d'estimer incidence et prévalence",
+      "description": "En cas-témoins, la proportion de cas est fixée par l'investigateur, ce qui interdit d'estimer incidence, prévalence et risque relatif.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 13,
+      "code": "D13",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "incidence-cumulee-taux-d-incidence",
+          "numero": "031"
+        },
+        {
+          "id": "choix-et-source-des-temoins",
+          "numero": "066"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "rapport-de-cotes-seule-mesure-estimable",
+          "numero": "071"
+        }
+      ],
+      "termes_en": ["case-control ratio", "cannot estimate incidence"],
+      "fiche": false
+    },
+    {
+      "id": "rapport-de-cotes-seule-mesure-estimable",
+      "numero": "071",
+      "libelle": "Rapport de cotes, seule mesure estimable",
+      "description": "En cas-témoins, seul le rapport de cotes d'exposition est estimable ; il approche le risque relatif lorsque la maladie est rare.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 13,
+      "code": "D13",
+      "phase": 9,
+      "prerequis": [
+        {
+          "id": "rapport-de-cotes",
+          "numero": "036"
+        },
+        {
+          "id": "impossibilite-d-estimer-incidence-et-prevalence",
+          "numero": "070"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["odds ratio", "rare disease assumption"],
+      "fiche": false
+    },
+    {
+      "id": "test-de-reference",
+      "numero": "072",
+      "libelle": "Test de référence",
+      "description": "Examen considéré comme le meilleur moyen disponible d'établir le diagnostic, appliqué à tous les sujets et interprété indépendamment du test évalué.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 14,
+      "code": "D14",
+      "phase": 10,
+      "prerequis": [
+        {
+          "id": "etude-d-evaluation-diagnostique",
+          "numero": "013"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "sensibilite-specificite",
+          "numero": "073"
+        },
+        {
+          "id": "biais-de-spectre-de-verification-d-incorporation",
+          "numero": "131"
+        }
+      ],
+      "termes_en": ["reference standard", "gold standard"],
+      "fiche": false
+    },
+    {
+      "id": "sensibilite-specificite",
+      "numero": "073",
+      "libelle": "Sensibilité, spécificité",
+      "description": "Proportion de malades ayant un test positif (sensibilité) et de non-malades ayant un test négatif (spécificité), caractéristiques intrinsèques du test.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 14,
+      "code": "D14",
+      "phase": 10,
+      "prerequis": [
+        {
+          "id": "test-de-reference",
+          "numero": "072"
+        },
+        {
+          "id": "effectifs-et-pourcentages",
+          "numero": "024"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "vpp-vpn-et-prevalence",
+          "numero": "074"
+        },
+        {
+          "id": "courbe-roc-auc-choix-du-seuil",
+          "numero": "130"
+        }
+      ],
+      "termes_en": ["sensitivity", "specificity", "true positive", "false negative"],
+      "fiche": false
+    },
+    {
+      "id": "vpp-vpn-et-prevalence",
+      "numero": "074",
+      "libelle": "VPP, VPN et prévalence",
+      "description": "Probabilité d'être malade si le test est positif (VPP) ou non malade s'il est négatif (VPN), qui varie avec la prévalence de la maladie dans la population testée.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 14,
+      "code": "D14",
+      "phase": 10,
+      "prerequis": [
+        {
+          "id": "sensibilite-specificite",
+          "numero": "073"
+        },
+        {
+          "id": "prevalence",
+          "numero": "030"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "rapports-de-vraisemblance",
+          "numero": "129"
+        }
+      ],
+      "termes_en": ["positive predictive value", "negative predictive value", "PPV", "NPV", "pretest probability"],
+      "fiche": false
+    },
+    {
+      "id": "lecture-d-un-forest-plot",
+      "numero": "075",
+      "libelle": "Lecture d'un forest plot",
+      "description": "Lecture du graphique d'une méta-analyse : effet et intervalle de confiance de chaque étude, poids, ligne d'absence d'effet et estimation combinée (losange).",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 15,
+      "code": "D15",
+      "phase": 10,
+      "prerequis": [
+        {
+          "id": "revue-systematique-vs-narrative",
+          "numero": "014"
+        },
+        {
+          "id": "intervalle-de-confiance-a-95",
+          "numero": "039"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "estimation-groupee",
+          "numero": "076"
+        },
+        {
+          "id": "funnel-plot-biais-de-publication",
+          "numero": "136"
+        }
+      ],
+      "termes_en": ["forest plot", "pooled estimate", "diamond", "weight"],
+      "fiche": false
+    },
+    {
+      "id": "estimation-groupee",
+      "numero": "076",
+      "libelle": "Estimation groupée",
+      "description": "Effet global calculé en combinant les études pondérées selon leur précision, interprétable seulement si les études sont suffisamment homogènes.",
+      "niveau": "base",
+      "categorie": "D",
+      "domaine": 15,
+      "code": "D15",
+      "phase": 10,
+      "prerequis": [
+        {
+          "id": "lecture-d-un-forest-plot",
+          "numero": "075"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "heterogeneite-q-i2",
+          "numero": "134"
+        }
+      ],
+      "termes_en": ["pooled estimate", "summary effect", "meta-analysis", "overall effect"],
+      "fiche": false
+    },
+    {
+      "id": "analyse-de-sensibilite-sous-groupes-interaction",
+      "numero": "077",
+      "libelle": "Analyse de sensibilité, sous-groupes, interaction",
+      "description": "Analyses complémentaires qui testent la robustesse du résultat principal à d'autres hypothèses (sensibilité) ou en explorent l'homogénéité selon les caractéristiques des sujets (sous-groupes).",
+      "niveau": "base",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 11,
+      "prerequis": [
+        {
+          "id": "risque-relatif",
+          "numero": "032"
+        },
+        {
+          "id": "facteur-de-confusion",
+          "numero": "049"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "sous-groupes-et-test-d-interaction",
+          "numero": "128"
+        }
+      ],
+      "termes_en": ["sensitivity analysis", "subgroup analysis", "interaction"],
+      "fiche": false
+    },
+    {
+      "id": "limites-declarees",
+      "numero": "078",
+      "libelle": "Limites déclarées",
+      "description": "Limites reconnues par les auteurs dans la discussion, dont il faut apprécier l'impact sur la validité des résultats.",
+      "niveau": "base",
+      "categorie": "C",
+      "domaine": 10,
+      "code": "C10",
+      "phase": 11,
+      "prerequis": [
+        {
+          "id": "validite-interne-et-externe",
+          "numero": "050"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "limites-non-declarees",
+          "numero": "139"
+        }
+      ],
+      "termes_en": ["limitations", "strengths and limitations"],
+      "fiche": false
+    },
+    {
+      "id": "applicabilite-a-la-pratique",
+      "numero": "079",
+      "libelle": "Applicabilité à la pratique",
+      "description": "Possibilité de transposer les résultats aux patients de la pratique courante, compte tenu de la population, du contexte, de l'intervention et du rapport bénéfice-risque.",
+      "niveau": "base",
+      "categorie": "C",
+      "domaine": 10,
+      "code": "C10",
+      "phase": 11,
+      "prerequis": [
+        {
+          "id": "validite-interne-et-externe",
+          "numero": "050"
+        },
+        {
+          "id": "population-source-cible-etudiee",
+          "numero": "016"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["applicability", "generalizability", "clinical practice", "implications for practice"],
+      "fiche": false
+    },
+    {
+      "id": "financement-et-liens-d-interets",
+      "numero": "080",
+      "libelle": "Financement et liens d'intérêts",
+      "description": "Origine du financement et liens d'intérêts des auteurs, et rôle du financeur dans la conception, l'analyse et la rédaction.",
+      "niveau": "base",
+      "categorie": "C",
+      "domaine": 10,
+      "code": "C10",
+      "phase": 11,
+      "prerequis": [],
+      "ouvre_vers": [],
+      "termes_en": ["funding", "sponsor", "conflicts of interest", "disclosures", "role of the funder"],
+      "fiche": false
+    },
+    {
+      "id": "conclusion-coherente-avec-les-resultats",
+      "numero": "081",
+      "libelle": "Conclusion cohérente avec les résultats",
+      "description": "Vérification que la conclusion des auteurs découle du résultat sur le critère principal, sans extrapolation au-delà de la population et du schéma étudiés.",
+      "niveau": "base",
+      "categorie": "C",
+      "domaine": 10,
+      "code": "C10",
+      "phase": 11,
+      "prerequis": [
+        {
+          "id": "significativite-vs-pertinence-clinique",
+          "numero": "042"
+        },
+        {
+          "id": "validite-interne-et-externe",
+          "numero": "050"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "spin-et-sur-interpretation",
+          "numero": "140"
+        }
+      ],
+      "termes_en": ["conclusion", "in conclusion", "our findings suggest"],
+      "fiche": false
+    },
+    {
+      "id": "critere-de-type-delai-censure",
+      "numero": "082",
+      "libelle": "Critère de type délai, censure",
+      "description": "Critère mesurant le temps jusqu'à la survenue d'un événement, avec des observations censurées pour les sujets sans événement à la fin de leur suivi.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 12,
+      "prerequis": [
+        {
+          "id": "nature-binaire-ou-quantitative",
+          "numero": "022"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "kaplan-meier-et-censure",
+          "numero": "083"
+        },
+        {
+          "id": "censure-informative",
+          "numero": "088"
+        },
+        {
+          "id": "biais-du-temps-immortel",
+          "numero": "090"
+        }
+      ],
+      "termes_en": ["time-to-event", "survival", "censored", "censoring", "event-free survival"],
+      "fiche": false
+    },
+    {
+      "id": "kaplan-meier-et-censure",
+      "numero": "083",
+      "libelle": "Kaplan-Meier et censure",
+      "description": "Estimateur de la probabilité de survie au cours du temps qui tient compte des données censurées, représenté par une courbe en escalier.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 6,
+      "code": "B6",
+      "phase": 12,
+      "prerequis": [
+        {
+          "id": "critere-de-type-delai-censure",
+          "numero": "082"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "sujets-a-risque-mediane-de-survie",
+          "numero": "084"
+        },
+        {
+          "id": "test-du-log-rank",
+          "numero": "085"
+        },
+        {
+          "id": "lecture-d-un-hazard-ratio",
+          "numero": "086"
+        },
+        {
+          "id": "risques-concurrents",
+          "numero": "089"
+        }
+      ],
+      "termes_en": ["Kaplan-Meier", "survival curve", "censored", "cumulative incidence"],
+      "fiche": false
+    },
+    {
+      "id": "sujets-a-risque-mediane-de-survie",
+      "numero": "084",
+      "libelle": "Sujets à risque, médiane de survie",
+      "description": "Lecture d'une courbe de survie : nombre de sujets encore suivis sous la courbe, qui conditionne la fiabilité de sa partie droite, et médiane de survie, temps où la moitié des sujets ont présenté l'événement.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 6,
+      "code": "B6",
+      "phase": 12,
+      "prerequis": [
+        {
+          "id": "kaplan-meier-et-censure",
+          "numero": "083"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["number at risk", "median survival", "median follow-up"],
+      "fiche": false
+    },
+    {
+      "id": "test-du-log-rank",
+      "numero": "085",
+      "libelle": "Test du log-rank",
+      "description": "Test qui compare des courbes de survie sur l'ensemble du suivi, sans quantifier l'écart entre elles.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 12,
+      "prerequis": [
+        {
+          "id": "kaplan-meier-et-censure",
+          "numero": "083"
+        },
+        {
+          "id": "tests-usuels-chi2-student-wilcoxon",
+          "numero": "040"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["log-rank test", "stratified log-rank"],
+      "fiche": false
+    },
+    {
+      "id": "lecture-d-un-hazard-ratio",
+      "numero": "086",
+      "libelle": "Lecture d'un hazard ratio",
+      "description": "Rapport des risques instantanés de survenue de l'événement entre deux groupes, issu d'un modèle de Cox et supposé constant au cours du temps.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 12,
+      "prerequis": [
+        {
+          "id": "kaplan-meier-et-censure",
+          "numero": "083"
+        },
+        {
+          "id": "risque-relatif",
+          "numero": "032"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "hypothese-des-risques-proportionnels",
+          "numero": "087"
+        },
+        {
+          "id": "regressions-lineaire-logistique-cox",
+          "numero": "092"
+        }
+      ],
+      "termes_en": ["hazard ratio", "HR", "Cox model"],
+      "fiche": true
+    },
+    {
+      "id": "hypothese-des-risques-proportionnels",
+      "numero": "087",
+      "libelle": "Hypothèse des risques proportionnels",
+      "description": "Condition du modèle de Cox selon laquelle le hazard ratio reste constant au cours du temps, mise en défaut quand les courbes de survie se croisent.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 12,
+      "prerequis": [
+        {
+          "id": "lecture-d-un-hazard-ratio",
+          "numero": "086"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["proportional hazards assumption", "Schoenfeld residuals", "crossing curves"],
+      "fiche": false
+    },
+    {
+      "id": "censure-informative",
+      "numero": "088",
+      "libelle": "Censure informative",
+      "description": "Censure liée au pronostic (sorties d'étude des patients les plus graves), qui viole l'hypothèse de l'estimateur de Kaplan-Meier et biaise la survie estimée.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 12,
+      "code": "D12",
+      "phase": 12,
+      "prerequis": [
+        {
+          "id": "critere-de-type-delai-censure",
+          "numero": "082"
+        },
+        {
+          "id": "biais-d-attrition",
+          "numero": "047"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["informative censoring", "non-informative censoring"],
+      "fiche": false
+    },
+    {
+      "id": "risques-concurrents",
+      "numero": "089",
+      "libelle": "Risques concurrents",
+      "description": "Événements (souvent le décès) qui empêchent la survenue de l'événement d'intérêt et faussent l'estimation de Kaplan-Meier s'ils sont traités comme des censures.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 12,
+      "prerequis": [
+        {
+          "id": "kaplan-meier-et-censure",
+          "numero": "083"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["competing risks", "Fine-Gray", "subdistribution hazard", "cumulative incidence function"],
+      "fiche": false
+    },
+    {
+      "id": "biais-du-temps-immortel",
+      "numero": "090",
+      "libelle": "Biais du temps immortel",
+      "description": "Biais des cohortes où une période pendant laquelle l'événement ne peut pas survenir est attribuée aux exposés, ce qui fait paraître l'exposition à tort protectrice.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 12,
+      "code": "D12",
+      "phase": 12,
+      "prerequis": [
+        {
+          "id": "definition-des-groupes-et-de-l-exposition",
+          "numero": "059"
+        },
+        {
+          "id": "critere-de-type-delai-censure",
+          "numero": "082"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "emulation-d-essai-cible",
+          "numero": "104"
+        }
+      ],
+      "termes_en": ["immortal time bias", "time-dependent exposure", "landmark analysis"],
+      "fiche": false
+    },
+    {
+      "id": "fraction-attribuable",
+      "numero": "091",
+      "libelle": "Fraction attribuable",
+      "description": "Proportion des cas attribuables à l'exposition, chez les exposés ou dans la population, qui dépend du risque relatif et de la fréquence de l'exposition.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "risque-relatif",
+          "numero": "032"
+        },
+        {
+          "id": "prevalence",
+          "numero": "030"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["attributable fraction", "population attributable fraction", "attributable risk"],
+      "fiche": false
+    },
+    {
+      "id": "regressions-lineaire-logistique-cox",
+      "numero": "092",
+      "libelle": "Régressions linéaire, logistique, Cox",
+      "description": "Modèles multivariés choisis selon le type de critère (quantitatif, binaire, délai), qui fournissent respectivement un coefficient, un rapport de cotes et un hazard ratio ajustés.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "tests-usuels-chi2-student-wilcoxon",
+          "numero": "040"
+        },
+        {
+          "id": "rapport-de-cotes",
+          "numero": "036"
+        },
+        {
+          "id": "lecture-d-un-hazard-ratio",
+          "numero": "086"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "ajustement",
+          "numero": "093"
+        },
+        {
+          "id": "analyse-appariee-regression-logistique-conditionnelle",
+          "numero": "097"
+        }
+      ],
+      "termes_en": ["linear regression", "logistic regression", "Cox proportional hazards model", "multivariable analysis"],
+      "fiche": false
+    },
+    {
+      "id": "ajustement",
+      "numero": "093",
+      "libelle": "Ajustement",
+      "description": "Prise en compte de facteurs de confusion mesurés dans l'analyse (modèle multivarié, stratification) pour estimer une association indépendante, sans pouvoir corriger la confusion non mesurée.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "facteur-de-confusion",
+          "numero": "049"
+        },
+        {
+          "id": "regressions-lineaire-logistique-cox",
+          "numero": "092"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "score-de-propension",
+          "numero": "095"
+        },
+        {
+          "id": "biais-de-collision",
+          "numero": "098"
+        },
+        {
+          "id": "emulation-d-essai-cible",
+          "numero": "104"
+        }
+      ],
+      "termes_en": ["adjusted", "adjustment", "multivariable", "controlling for", "covariates"],
+      "fiche": false
+    },
+    {
+      "id": "biais-d-indication",
+      "numero": "094",
+      "libelle": "Biais d'indication",
+      "description": "Confusion propre aux études observationnelles de traitement : les patients traités diffèrent des non traités par la raison même de leur traitement (gravité, pronostic).",
+      "niveau": "avance",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "facteur-de-confusion",
+          "numero": "049"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "score-de-propension",
+          "numero": "095"
+        }
+      ],
+      "termes_en": ["confounding by indication", "indication bias", "channeling bias"],
+      "fiche": false
+    },
+    {
+      "id": "score-de-propension",
+      "numero": "095",
+      "libelle": "Score de propension",
+      "description": "Probabilité estimée de recevoir le traitement selon les caractéristiques mesurées, utilisée par appariement, pondération ou ajustement pour rendre les groupes comparables en observationnel.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "ajustement",
+          "numero": "093"
+        },
+        {
+          "id": "biais-d-indication",
+          "numero": "094"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "difference-standardisee-entre-groupes",
+          "numero": "096"
+        }
+      ],
+      "termes_en": ["propensity score", "propensity score matching", "inverse probability weighting", "IPTW"],
+      "fiche": false
+    },
+    {
+      "id": "difference-standardisee-entre-groupes",
+      "numero": "096",
+      "libelle": "Différence standardisée entre groupes",
+      "description": "Différence entre groupes rapportée à l'écart-type, utilisée pour juger l'équilibre d'une variable entre groupes (seuil usuel de 0,1) indépendamment de l'effectif, notamment après score de propension.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 6,
+      "code": "B6",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "comparabilite-initiale-tableau-1",
+          "numero": "055"
+        },
+        {
+          "id": "score-de-propension",
+          "numero": "095"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["standardized mean difference", "SMD", "covariate balance", "standardized difference"],
+      "fiche": false
+    },
+    {
+      "id": "analyse-appariee-regression-logistique-conditionnelle",
+      "numero": "097",
+      "libelle": "Analyse appariée, régression logistique conditionnelle",
+      "description": "Analyse qui respecte l'appariement (paires discordantes, régression logistique conditionnelle), sans laquelle l'estimation de l'association est biaisée.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 13,
+      "code": "D13",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "appariement-principe-et-facteurs",
+          "numero": "067"
+        },
+        {
+          "id": "regressions-lineaire-logistique-cox",
+          "numero": "092"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["conditional logistic regression", "matched analysis", "McNemar test", "discordant pairs"],
+      "fiche": false
+    },
+    {
+      "id": "biais-de-collision",
+      "numero": "098",
+      "libelle": "Biais de collision",
+      "description": "Biais créé en ajustant ou en sélectionnant sur une variable causée à la fois par l'exposition et par l'événement, qui fait apparaître une association artificielle.",
+      "niveau": "avance",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "ajustement",
+          "numero": "093"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["collider bias", "collider stratification", "index event bias"],
+      "fiche": false
+    },
+    {
+      "id": "causalite-inverse",
+      "numero": "099",
+      "libelle": "Causalité inverse",
+      "description": "Situation où c'est la maladie, ou ses premiers signes, qui modifie l'exposition, et non l'inverse.",
+      "niveau": "avance",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "anteriorite-de-l-exposition-sur-l-evenement",
+          "numero": "061"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "criteres-de-bradford-hill",
+          "numero": "105"
+        }
+      ],
+      "termes_en": ["reverse causation", "reverse causality", "protopathic bias"],
+      "fiche": false
+    },
+    {
+      "id": "effet-travailleur-sain",
+      "numero": "100",
+      "libelle": "Effet travailleur sain",
+      "description": "Biais de sélection des cohortes professionnelles : les travailleurs sont en meilleure santé que la population générale, ce qui sous-estime les risques liés au travail.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 12,
+      "code": "D12",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "biais-de-selection",
+          "numero": "046"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["healthy worker effect"],
+      "fiche": false
+    },
+    {
+      "id": "biais-de-selection-des-temoins-berkson",
+      "numero": "101",
+      "libelle": "Biais de sélection des témoins (Berkson)",
+      "description": "Biais des cas-témoins hospitaliers où les témoins, hospitalisés pour d'autres maladies, ne représentent pas l'exposition de la population source.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 13,
+      "code": "D13",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "choix-et-source-des-temoins",
+          "numero": "066"
+        },
+        {
+          "id": "biais-de-selection",
+          "numero": "046"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["Berkson's bias", "admission rate bias", "hospital controls"],
+      "fiche": false
+    },
+    {
+      "id": "cas-temoins-nichee",
+      "numero": "102",
+      "libelle": "Cas-témoins nichée",
+      "description": "Étude cas-témoins menée au sein d'une cohorte, avec des témoins tirés parmi les sujets encore à risque au moment de chaque cas.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 13,
+      "code": "D13",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "cohorte-prospective-ou-retrospective",
+          "numero": "010"
+        },
+        {
+          "id": "choix-et-source-des-temoins",
+          "numero": "066"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["nested case-control study", "risk-set sampling", "incidence density sampling"],
+      "fiche": false
+    },
+    {
+      "id": "bases-medico-administratives-registres",
+      "numero": "103",
+      "libelle": "Bases médico-administratives, registres",
+      "description": "Sources de données recueillies hors recherche (SNDS, PMSI, registres), exhaustives et volumineuses mais exposées aux erreurs de codage et à l'absence de certaines variables.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "cohorte-prospective-ou-retrospective",
+          "numero": "010"
+        },
+        {
+          "id": "biais-de-classement-differentiel-ou-non",
+          "numero": "048"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["administrative database", "claims data", "registry", "electronic health records", "SNDS"],
+      "fiche": false
+    },
+    {
+      "id": "emulation-d-essai-cible",
+      "numero": "104",
+      "libelle": "Émulation d'essai cible",
+      "description": "Analyse de données observationnelles construite pour reproduire le protocole d'un essai randomisé hypothétique (éligibilité, début du suivi, stratégies comparées) afin de limiter les biais.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "essai-controle-randomise",
+          "numero": "012"
+        },
+        {
+          "id": "biais-du-temps-immortel",
+          "numero": "090"
+        },
+        {
+          "id": "ajustement",
+          "numero": "093"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["target trial emulation", "emulated trial", "time zero"],
+      "fiche": false
+    },
+    {
+      "id": "criteres-de-bradford-hill",
+      "numero": "105",
+      "libelle": "Critères de Bradford Hill",
+      "description": "Arguments en faveur d'une relation causale à partir d'études observationnelles : force, constance, spécificité, temporalité, relation dose-effet, plausibilité, cohérence, expérimentation, analogie.",
+      "niveau": "avance",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 13,
+      "prerequis": [
+        {
+          "id": "causalite-inverse",
+          "numero": "099"
+        },
+        {
+          "id": "validite-interne-et-externe",
+          "numero": "050"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["Bradford Hill criteria", "causality", "dose-response", "temporality", "biological plausibility"],
+      "fiche": false
+    },
+    {
+      "id": "critere-composite",
+      "numero": "106",
+      "libelle": "Critère composite",
+      "description": "Critère qui regroupe plusieurs événements, dont l'interprétation exige d'examiner chaque composante, notamment quand les moins graves dominent le résultat.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 14,
+      "prerequis": [
+        {
+          "id": "critere-principal-unique-et-prespecifie",
+          "numero": "020"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["composite endpoint", "composite outcome", "MACE", "components"],
+      "fiche": false
+    },
+    {
+      "id": "critere-intermediaire-de-substitution",
+      "numero": "107",
+      "libelle": "Critère intermédiaire de substitution",
+      "description": "Critère biologique ou physiologique utilisé à la place d'un critère clinique, dont la validité dépend de la preuve que son amélioration prédit le bénéfice clinique.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 14,
+      "prerequis": [
+        {
+          "id": "critere-principal-unique-et-prespecifie",
+          "numero": "020"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["surrogate endpoint", "surrogate outcome", "intermediate endpoint", "biomarker"],
+      "fiche": false
+    },
+    {
+      "id": "proms-et-echelles-validees",
+      "numero": "108",
+      "libelle": "PROMs et échelles validées",
+      "description": "Critères rapportés par le patient (qualité de vie, symptômes) mesurés par des échelles validées, dont il faut connaître la différence minimale cliniquement pertinente.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 14,
+      "prerequis": [
+        {
+          "id": "nature-binaire-ou-quantitative",
+          "numero": "022"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["patient-reported outcome", "PROM", "quality of life", "validated scale", "minimal clinically important difference", "MCID"],
+      "fiche": false
+    },
+    {
+      "id": "comite-d-adjudication",
+      "numero": "109",
+      "libelle": "Comité d'adjudication",
+      "description": "Comité indépendant qui valide en aveugle les événements selon des définitions préétablies, pour garantir une mesure homogène du critère de jugement.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 14,
+      "prerequis": [
+        {
+          "id": "mesure-en-aveugle",
+          "numero": "023"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["adjudication committee", "clinical events committee", "adjudicated"],
+      "fiche": false
+    },
+    {
+      "id": "regression-vers-la-moyenne",
+      "numero": "110",
+      "libelle": "Régression vers la moyenne",
+      "description": "Tendance des valeurs extrêmes mesurées une première fois à se rapprocher de la moyenne à la mesure suivante, qui peut simuler un effet en l'absence de groupe contrôle.",
+      "niveau": "avance",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 14,
+      "prerequis": [
+        {
+          "id": "moyenne-et-ecart-type",
+          "numero": "025"
+        },
+        {
+          "id": "criteres-d-inclusion-et-de-non-inclusion",
+          "numero": "017"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["regression to the mean"],
+      "fiche": false
+    },
+    {
+      "id": "protocole-publie-et-enregistrement",
+      "numero": "111",
+      "libelle": "Protocole publié et enregistrement",
+      "description": "Enregistrement préalable de l'étude dans un registre et publication du protocole, qui permettent de vérifier que critère principal et analyses n'ont pas été modifiés après coup.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 1,
+      "code": "A1",
+      "phase": 14,
+      "prerequis": [
+        {
+          "id": "objectif-principal-et-secondaires",
+          "numero": "005"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "changement-de-critere-a-posteriori",
+          "numero": "112"
+        },
+        {
+          "id": "grilles-equator-consort-strobe-stard-prisma",
+          "numero": "141"
+        },
+        {
+          "id": "science-ouverte-partage-des-donnees",
+          "numero": "142"
+        }
+      ],
+      "termes_en": ["trial registration", "ClinicalTrials.gov", "registered", "study protocol", "statistical analysis plan", "PROSPERO"],
+      "fiche": false
+    },
+    {
+      "id": "changement-de-critere-a-posteriori",
+      "numero": "112",
+      "libelle": "Changement de critère a posteriori",
+      "description": "Modification du critère principal ou de l'analyse après le début de l'étude, repérable par comparaison avec le registre ou le protocole, source de résultats biaisés.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 4,
+      "code": "A4",
+      "phase": 14,
+      "prerequis": [
+        {
+          "id": "critere-principal-unique-et-prespecifie",
+          "numero": "020"
+        },
+        {
+          "id": "protocole-publie-et-enregistrement",
+          "numero": "111"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "spin-et-sur-interpretation",
+          "numero": "140"
+        }
+      ],
+      "termes_en": ["outcome switching", "protocol amendment", "post hoc", "selective outcome reporting"],
+      "fiche": false
+    },
+    {
+      "id": "stratification-blocs-minimisation",
+      "numero": "113",
+      "libelle": "Stratification, blocs, minimisation",
+      "description": "Techniques de randomisation qui garantissent l'équilibre des effectifs et de facteurs pronostiques importants entre groupes (par centre ou par facteur).",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "randomisation",
+          "numero": "053"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["stratified randomization", "block randomization", "permuted blocks", "minimization"],
+      "fiche": false
+    },
+    {
+      "id": "methodes-d-echantillonnage",
+      "numero": "114",
+      "libelle": "Méthodes d'échantillonnage",
+      "description": "Façon de tirer l'échantillon (aléatoire simple, stratifié, en grappes, de convenance), qui conditionne sa représentativité de la population source.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 3,
+      "code": "A3",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "population-source-cible-etudiee",
+          "numero": "016"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["random sampling", "stratified sampling", "cluster sampling", "convenience sample", "consecutive patients"],
+      "fiche": false
+    },
+    {
+      "id": "essai-en-grappes",
+      "numero": "115",
+      "libelle": "Essai en grappes",
+      "description": "Essai où ce sont des groupes de sujets (services, centres, cabinets) qui sont randomisés, ce qui impose de tenir compte de la corrélation intra-grappe.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "randomisation",
+          "numero": "053"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "effet-de-grappe-et-icc",
+          "numero": "116"
+        }
+      ],
+      "termes_en": ["cluster randomized trial", "cluster-randomised", "stepped-wedge"],
+      "fiche": false
+    },
+    {
+      "id": "effet-de-grappe-et-icc",
+      "numero": "116",
+      "libelle": "Effet de grappe et ICC",
+      "description": "Ressemblance des sujets d'une même grappe, mesurée par le coefficient de corrélation intraclasse, qui réduit l'information apportée par chaque sujet et augmente le nombre de sujets nécessaire.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 3,
+      "code": "A3",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "essai-en-grappes",
+          "numero": "115"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "reproductibilite-kappa-icc",
+          "numero": "132"
+        }
+      ],
+      "termes_en": ["intracluster correlation coefficient", "ICC", "design effect", "clustering"],
+      "fiche": false
+    },
+    {
+      "id": "plan-croise-plan-factoriel",
+      "numero": "117",
+      "libelle": "Plan croisé, plan factoriel",
+      "description": "Plans d'essai particuliers : chaque sujet reçoit successivement les traitements (croisé, avec période de wash-out), ou plusieurs interventions sont testées simultanément (factoriel).",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 2,
+      "code": "A2",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "essai-controle-randomise",
+          "numero": "012"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["crossover trial", "washout period", "factorial design", "2x2 factorial"],
+      "fiche": false
+    },
+    {
+      "id": "contamination-cross-over",
+      "numero": "118",
+      "libelle": "Contamination, cross-over",
+      "description": "Patients d'un groupe recevant tout ou partie de l'intervention de l'autre groupe, ce qui réduit l'écart observé entre les bras en intention de traiter.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "intention-de-traiter-vs-per-protocole",
+          "numero": "058"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["contamination", "crossover", "treatment switching"],
+      "fiche": false
+    },
+    {
+      "id": "itt-modifiee",
+      "numero": "119",
+      "libelle": "ITT modifiée",
+      "description": "Variante de l'intention de traiter excluant certains patients randomisés (n'ayant reçu aucune dose, sans évaluation), qui peut réintroduire un biais selon les critères d'exclusion.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "intention-de-traiter-vs-per-protocole",
+          "numero": "058"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "gestion-des-donnees-manquantes",
+          "numero": "120"
+        }
+      ],
+      "termes_en": ["modified intention-to-treat", "mITT"],
+      "fiche": false
+    },
+    {
+      "id": "gestion-des-donnees-manquantes",
+      "numero": "120",
+      "libelle": "Gestion des données manquantes",
+      "description": "Méthodes de prise en compte des données manquantes (analyse des cas complets, imputation simple ou multiple) et leurs hypothèses, avec l'analyse de sensibilité qui en teste l'impact.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 3,
+      "code": "A3",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "perdus-de-vue",
+          "numero": "028"
+        },
+        {
+          "id": "itt-modifiee",
+          "numero": "119"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["missing data", "multiple imputation", "complete case analysis", "last observation carried forward", "LOCF"],
+      "fiche": false
+    },
+    {
+      "id": "superiorite-non-inferiorite-equivalence",
+      "numero": "121",
+      "libelle": "Supériorité, non-infériorité, équivalence",
+      "description": "Objectifs d'essai qui déterminent l'hypothèse testée et la lecture du résultat : démontrer qu'un traitement est meilleur, pas moins bon d'une marge définie, ou équivalent.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "hypotheses-h0-et-h1-valeur-de-p",
+          "numero": "037"
+        },
+        {
+          "id": "intervalle-de-confiance-a-95",
+          "numero": "039"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "marge-de-non-inferiorite",
+          "numero": "122"
+        }
+      ],
+      "termes_en": ["superiority", "non-inferiority", "equivalence trial"],
+      "fiche": false
+    },
+    {
+      "id": "marge-de-non-inferiorite",
+      "numero": "122",
+      "libelle": "Marge de non-infériorité",
+      "description": "Perte d'efficacité maximale jugée acceptable, fixée a priori ; la non-infériorité est démontrée si la borne de l'intervalle de confiance ne franchit pas cette marge.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "superiorite-non-inferiorite-equivalence",
+          "numero": "121"
+        },
+        {
+          "id": "significativite-vs-pertinence-clinique",
+          "numero": "042"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "nsn-en-non-inferiorite",
+          "numero": "123"
+        }
+      ],
+      "termes_en": ["non-inferiority margin", "delta", "prespecified margin"],
+      "fiche": false
+    },
+    {
+      "id": "nsn-en-non-inferiorite",
+      "numero": "123",
+      "libelle": "NSN en non-infériorité",
+      "description": "Calcul du nombre de sujets d'un essai de non-infériorité, fondé sur la marge de non-infériorité et généralement plus élevé que pour un essai de supériorité.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 5,
+      "code": "A5",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "marge-de-non-inferiorite",
+          "numero": "122"
+        },
+        {
+          "id": "hypotheses-du-calcul",
+          "numero": "045"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["non-inferiority sample size", "one-sided alpha", "non-inferiority margin"],
+      "fiche": false
+    },
+    {
+      "id": "inflation-pour-attrition",
+      "numero": "124",
+      "libelle": "Inflation pour attrition",
+      "description": "Majoration du nombre de sujets prévu pour compenser les perdus de vue attendus et préserver la puissance.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 5,
+      "code": "A5",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "hypotheses-du-calcul",
+          "numero": "045"
+        },
+        {
+          "id": "perdus-de-vue",
+          "numero": "028"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["allowing for dropout", "attrition rate", "to account for loss to follow-up"],
+      "fiche": false
+    },
+    {
+      "id": "multiplicite-des-tests",
+      "numero": "125",
+      "libelle": "Multiplicité des tests",
+      "description": "Augmentation du risque de conclure à tort à un effet quand les tests se multiplient (critères, groupes, analyses), corrigée par un ajustement ou une procédure hiérarchique.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "risques-alpha-et-beta-puissance",
+          "numero": "043"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "analyses-intermediaires-depense-d-alpha",
+          "numero": "126"
+        },
+        {
+          "id": "sous-groupes-et-test-d-interaction",
+          "numero": "128"
+        }
+      ],
+      "termes_en": ["multiple comparisons", "multiplicity", "Bonferroni", "hierarchical testing", "family-wise error rate"],
+      "fiche": false
+    },
+    {
+      "id": "analyses-intermediaires-depense-d-alpha",
+      "numero": "126",
+      "libelle": "Analyses intermédiaires, dépense d'alpha",
+      "description": "Analyses prévues en cours d'essai avec des seuils de signification ajustés (fonction de dépense d'alpha) pour conserver un risque alpha global de 5 %.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 5,
+      "code": "A5",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "multiplicite-des-tests",
+          "numero": "125"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "arret-premature",
+          "numero": "127"
+        }
+      ],
+      "termes_en": ["interim analysis", "alpha spending", "O'Brien-Fleming", "stopping boundaries", "data monitoring committee"],
+      "fiche": false
+    },
+    {
+      "id": "arret-premature",
+      "numero": "127",
+      "libelle": "Arrêt prématuré",
+      "description": "Interruption d'un essai avant son terme (bénéfice, futilité, toxicité, recrutement insuffisant), un arrêt précoce pour bénéfice tendant à surestimer l'effet.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 11,
+      "code": "D11",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "analyses-intermediaires-depense-d-alpha",
+          "numero": "126"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["stopped early", "early termination", "futility", "stopped for benefit"],
+      "fiche": false
+    },
+    {
+      "id": "sous-groupes-et-test-d-interaction",
+      "numero": "128",
+      "libelle": "Sous-groupes et test d'interaction",
+      "description": "Évaluation de la variation de l'effet selon une caractéristique, qui repose sur un test d'interaction et non sur la comparaison des valeurs de p de chaque sous-groupe.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 8,
+      "code": "B8",
+      "phase": 15,
+      "prerequis": [
+        {
+          "id": "analyse-de-sensibilite-sous-groupes-interaction",
+          "numero": "077"
+        },
+        {
+          "id": "multiplicite-des-tests",
+          "numero": "125"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["subgroup analysis", "test for interaction", "P for interaction", "effect modification", "heterogeneity of treatment effect"],
+      "fiche": false
+    },
+    {
+      "id": "rapports-de-vraisemblance",
+      "numero": "129",
+      "libelle": "Rapports de vraisemblance",
+      "description": "Rapports qui indiquent de combien un résultat positif ou négatif modifie la probabilité de maladie, indépendamment de la prévalence.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 14,
+      "code": "D14",
+      "phase": 16,
+      "prerequis": [
+        {
+          "id": "vpp-vpn-et-prevalence",
+          "numero": "074"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["likelihood ratio", "positive likelihood ratio", "negative likelihood ratio", "LR+", "LR-"],
+      "fiche": false
+    },
+    {
+      "id": "courbe-roc-auc-choix-du-seuil",
+      "numero": "130",
+      "libelle": "Courbe ROC, AUC, choix du seuil",
+      "description": "Courbe des couples sensibilité / 1 - spécificité selon le seuil d'un test quantitatif, dont l'aire sous la courbe résume la capacité discriminante et qui guide le choix du seuil.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 14,
+      "code": "D14",
+      "phase": 16,
+      "prerequis": [
+        {
+          "id": "sensibilite-specificite",
+          "numero": "073"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["ROC curve", "area under the curve", "AUC", "C statistic", "cutoff", "Youden index"],
+      "fiche": false
+    },
+    {
+      "id": "biais-de-spectre-de-verification-d-incorporation",
+      "numero": "131",
+      "libelle": "Biais de spectre, de vérification, d'incorporation",
+      "description": "Biais propres aux études diagnostiques : population non représentative (spectre), test de référence appliqué selon le résultat du test (vérification), test évalué inclus dans la référence (incorporation).",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 14,
+      "code": "D14",
+      "phase": 16,
+      "prerequis": [
+        {
+          "id": "test-de-reference",
+          "numero": "072"
+        },
+        {
+          "id": "biais-de-selection",
+          "numero": "046"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["spectrum bias", "verification bias", "partial verification", "incorporation bias"],
+      "fiche": false
+    },
+    {
+      "id": "reproductibilite-kappa-icc",
+      "numero": "132",
+      "libelle": "Reproductibilité : kappa, ICC",
+      "description": "Concordance entre observateurs ou entre mesures répétées, mesurée par le kappa (variables qualitatives) ou le coefficient de corrélation intraclasse (variables quantitatives).",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 14,
+      "code": "D14",
+      "phase": 16,
+      "prerequis": [
+        {
+          "id": "mesure-en-aveugle",
+          "numero": "023"
+        },
+        {
+          "id": "effet-de-grappe-et-icc",
+          "numero": "116"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["inter-rater agreement", "reproducibility", "kappa", "intraclass correlation coefficient", "reliability"],
+      "fiche": false
+    },
+    {
+      "id": "difference-de-moyennes-standardisee",
+      "numero": "133",
+      "libelle": "Différence de moyennes standardisée",
+      "description": "Mesure d'effet sans unité (différence de moyennes divisée par l'écart-type, d de Cohen), utilisée pour comparer ou combiner des critères mesurés sur des échelles différentes.",
+      "niveau": "avance",
+      "categorie": "B",
+      "domaine": 7,
+      "code": "B7",
+      "phase": 16,
+      "prerequis": [
+        {
+          "id": "taille-de-l-effet",
+          "numero": "041"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["standardized mean difference", "SMD", "Cohen's d", "Hedges' g"],
+      "fiche": false
+    },
+    {
+      "id": "heterogeneite-q-i2",
+      "numero": "134",
+      "libelle": "Hétérogénéité : Q, I²",
+      "description": "Variabilité des résultats entre études au-delà du hasard, testée par le Q de Cochran et quantifiée par l'I² (part de la variabilité due à l'hétérogénéité).",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 15,
+      "code": "D15",
+      "phase": 16,
+      "prerequis": [
+        {
+          "id": "estimation-groupee",
+          "numero": "076"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "effets-fixes-vs-aleatoires",
+          "numero": "135"
+        },
+        {
+          "id": "grade-certitude-et-force",
+          "numero": "143"
+        }
+      ],
+      "termes_en": ["heterogeneity", "I2", "Cochran's Q", "between-study variance", "tau2"],
+      "fiche": false
+    },
+    {
+      "id": "effets-fixes-vs-aleatoires",
+      "numero": "135",
+      "libelle": "Effets fixes vs aléatoires",
+      "description": "Modèles de méta-analyse supposant un effet commun à toutes les études (fixe) ou une distribution d'effets (aléatoire), ce dernier donnant un intervalle de confiance plus large en cas d'hétérogénéité.",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 15,
+      "code": "D15",
+      "phase": 16,
+      "prerequis": [
+        {
+          "id": "heterogeneite-q-i2",
+          "numero": "134"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["fixed-effect model", "random-effects model", "DerSimonian-Laird"],
+      "fiche": false
+    },
+    {
+      "id": "funnel-plot-biais-de-publication",
+      "numero": "136",
+      "libelle": "Funnel plot, biais de publication",
+      "description": "Graphique de l'effet de chaque étude selon sa précision, dont l'asymétrie suggère un biais de publication (petites études négatives non publiées).",
+      "niveau": "avance",
+      "categorie": "D",
+      "domaine": 15,
+      "code": "D15",
+      "phase": 16,
+      "prerequis": [
+        {
+          "id": "lecture-d-un-forest-plot",
+          "numero": "075"
+        }
+      ],
+      "ouvre_vers": [
+        {
+          "id": "grade-certitude-et-force",
+          "numero": "143"
+        }
+      ],
+      "termes_en": ["funnel plot", "publication bias", "small-study effects", "Egger's test"],
+      "fiche": false
+    },
+    {
+      "id": "coherence-externe",
+      "numero": "137",
+      "libelle": "Cohérence externe",
+      "description": "Concordance des résultats avec ceux des autres études et des connaissances physiopathologiques, discutée par les auteurs dans la discussion.",
+      "niveau": "avance",
+      "categorie": "C",
+      "domaine": 9,
+      "code": "C9",
+      "phase": 17,
+      "prerequis": [
+        {
+          "id": "validite-interne-et-externe",
+          "numero": "050"
+        },
+        {
+          "id": "revue-systematique-vs-narrative",
+          "numero": "014"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["consistent with previous studies", "in line with", "external consistency"],
+      "fiche": false
+    },
+    {
+      "id": "absence-de-preuve-et-preuve-d-absence",
+      "numero": "138",
+      "libelle": "Absence de preuve et preuve d'absence",
+      "description": "Un résultat non significatif ne prouve pas l'absence d'effet, surtout en cas de puissance insuffisante ou d'intervalle de confiance large.",
+      "niveau": "avance",
+      "categorie": "C",
+      "domaine": 10,
+      "code": "C10",
+      "phase": 17,
+      "prerequis": [
+        {
+          "id": "significativite-vs-pertinence-clinique",
+          "numero": "042"
+        },
+        {
+          "id": "risques-alpha-et-beta-puissance",
+          "numero": "043"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["absence of evidence", "not statistically significant", "no significant difference", "underpowered"],
+      "fiche": false
+    },
+    {
+      "id": "limites-non-declarees",
+      "numero": "139",
+      "libelle": "Limites non déclarées",
+      "description": "Limites méthodologiques que les auteurs ne mentionnent pas et que le lecteur doit identifier lui-même.",
+      "niveau": "avance",
+      "categorie": "C",
+      "domaine": 10,
+      "code": "C10",
+      "phase": 17,
+      "prerequis": [
+        {
+          "id": "limites-declarees",
+          "numero": "078"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["limitations"],
+      "fiche": false
+    },
+    {
+      "id": "spin-et-sur-interpretation",
+      "numero": "140",
+      "libelle": "Spin et sur-interprétation",
+      "description": "Présentation des résultats qui fait paraître le traitement plus favorable que ce que montrent les données, par exemple en mettant en avant des critères secondaires quand le critère principal est négatif.",
+      "niveau": "avance",
+      "categorie": "C",
+      "domaine": 10,
+      "code": "C10",
+      "phase": 17,
+      "prerequis": [
+        {
+          "id": "conclusion-coherente-avec-les-resultats",
+          "numero": "081"
+        },
+        {
+          "id": "changement-de-critere-a-posteriori",
+          "numero": "112"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["spin", "overinterpretation", "misleading reporting"],
+      "fiche": false
+    },
+    {
+      "id": "grilles-equator-consort-strobe-stard-prisma",
+      "numero": "141",
+      "libelle": "Grilles EQUATOR : CONSORT, STROBE, STARD, PRISMA",
+      "description": "Recommandations de rédaction propres à chaque schéma d'étude (essai, observationnel, diagnostique, revue systématique), utilisables comme grilles de lecture.",
+      "niveau": "avance",
+      "categorie": "C",
+      "domaine": 10,
+      "code": "C10",
+      "phase": 17,
+      "prerequis": [
+        {
+          "id": "structure-imrad",
+          "numero": "001"
+        },
+        {
+          "id": "protocole-publie-et-enregistrement",
+          "numero": "111"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["CONSORT", "STROBE", "STARD", "PRISMA", "EQUATOR network", "reporting guideline"],
+      "fiche": false
+    },
+    {
+      "id": "science-ouverte-partage-des-donnees",
+      "numero": "142",
+      "libelle": "Science ouverte, partage des données",
+      "description": "Mise à disposition des données, du code et des documents de l'étude, qui conditionne la reproductibilité et la vérification indépendante des résultats.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 1,
+      "code": "A1",
+      "phase": 17,
+      "prerequis": [
+        {
+          "id": "protocole-publie-et-enregistrement",
+          "numero": "111"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["data sharing statement", "open science", "data availability", "open access"],
+      "fiche": false
+    },
+    {
+      "id": "grade-certitude-et-force",
+      "numero": "143",
+      "libelle": "GRADE : certitude et force",
+      "description": "Système qui cote la certitude des preuves (élevée à très faible) selon le risque de biais, l'incohérence, le caractère indirect, l'imprécision et le biais de publication, et la force d'une recommandation.",
+      "niveau": "avance",
+      "categorie": "A",
+      "domaine": 1,
+      "code": "A1",
+      "phase": 17,
+      "prerequis": [
+        {
+          "id": "niveaux-de-preuve-has",
+          "numero": "015"
+        },
+        {
+          "id": "heterogeneite-q-i2",
+          "numero": "134"
+        },
+        {
+          "id": "funnel-plot-biais-de-publication",
+          "numero": "136"
+        }
+      ],
+      "ouvre_vers": [],
+      "termes_en": ["GRADE", "certainty of evidence", "quality of evidence", "strong recommendation", "weak recommendation"],
+      "fiche": false
+    }
+  ]
+}

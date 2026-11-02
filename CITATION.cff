@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Si vous utilisez ce skill, merci de le citer ainsi."
+title: "lca-create : skill Claude de génération de sujets de lecture critique d'article"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Gallien
+    given-names: Yves
+    affiliation: "CHU de Rennes, Université de Rennes"
